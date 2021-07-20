@@ -21,7 +21,11 @@ const actions = {
   },
 
   addPost: async (post) => {
-    let res = await axios.post(`${serverUrl}/add-post`, post, createHeaders());
+    let res = await axios.post(
+      `${serverUrl}/add-post`,
+      { post },
+      createHeaders()
+    );
     return res;
   },
   getAllPosts: async (post) => {
