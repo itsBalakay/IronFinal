@@ -20,9 +20,8 @@ function Home(props) {
 
   return (
     <>
-      <div>
-        <h1>Home</h1>
-        <img src="" />
+      <div className="header-img-div">
+        <img className="cfs-header" src={"/photos/cfs11.jpeg"} alt="cfs" />
       </div>
       <div className="showPostDiv">
         <ul>
