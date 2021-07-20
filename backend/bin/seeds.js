@@ -69,6 +69,7 @@ const shirts = [
     imageUrl: [
       "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-83-away-new.jpg",
       "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-83-away-premium1_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-83-away-premium4_1.jpg",
     ],
   },
   {
@@ -204,6 +205,21 @@ const shirts = [
     imageUrl: [
       "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/m/a/man-city-08-home-kompany_2_1_1_1_1_3_2_1_1_1_1_2.jpg",
       "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/m/a/man-city-08-home_1_5_1_1_2_2_2_2_1_1_1_1_1_3_2_1_1_1_1_2.jpg",
+    ],
+  },
+  {
+    club: "Manchester City",
+    year: 1997,
+    player: null,
+    league: "Premier League",
+    size: "XL",
+    condition: 7,
+    price: 179.99,
+    notes:
+      "Classic design home shirt as worn when the side suffered relegation to Division Two in '98 but famously bounced back in dramatic fashion in the following campaign with a Play-Off triumph over Gillingham",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/m/a/man-city-97-home_1_4_1_3_1_1_1_3_2_2_3_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/m/a/man-city-97-home-reverse_1_3_1_1_1_3_2_2_3_1.jpg",
     ],
   },
 ];
