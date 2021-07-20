@@ -3,20 +3,20 @@ import axios from "axios";
 import actions from "../api";
 
 function Home(props) {
-  const [allPosts, setAllPosts] = useState([]);
+  // const [allPosts, setAllPosts] = useState([]);
 
-  useEffect(async () => {
-    let res = await actions.getAllPosts();
-    console.log(res);
-    setAllPosts(res.data);
-  }, []);
+  // useEffect(async () => {
+  //   let res = await actions.getAllPosts();
+  //   console.log(res);
+  //   setAllPosts(res.data);
+  // }, []);
 
-  const ShowPosts = () =>
-    allPosts.map((eachPost) => (
-      <li key={eachPost._id}>
-        {eachPost.post} <i>created by ...{eachPost.userId?.name}</i>
-      </li>
-    ));
+  // const ShowPosts = () =>
+  //   allPosts.map((eachPost) => (
+  //     <li key={eachPost._id}>
+  //       {eachPost.post} <i>created by ...{eachPost.userId?.name}</i>
+  //     </li>
+  //   ));
 
   return (
     <>
@@ -24,9 +24,7 @@ function Home(props) {
         <img className="cfs-header" src={"/photos/cfs11.jpeg"} alt="cfs" />
       </div>
       <div className="showPostDiv">
-        <ul>
-          <ShowPosts />
-        </ul>
+        <ul>{/* <ShowPosts /> */}</ul>
       </div>
     </>
   );

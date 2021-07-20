@@ -7,6 +7,7 @@ import TheContext from "./TheContext";
 import Home from "./components/Home";
 import Auth from "./components/Auth";
 import AddPost from "./components/AddPost";
+import Favs from "./components/Favs";
 import Profile from "./components/Profile";
 
 function App() {
@@ -28,8 +29,9 @@ function App() {
         <i>{user?.name}</i>
         <nav className="navBar">
           <Link to="/">Home</Link>
-          <Link to="/newShirts">New Shirts</Link>
-          <Link to="/retroShirts">Retro Shirts</Link>
+          <Link to="/NewShirts">New Shirts</Link>
+          <Link to="/RetroShirts">Retro Shirts</Link>
+          <Link to="/Favourites">Favourites</Link>
 
           {user?.name ? (
             <>
@@ -47,6 +49,11 @@ function App() {
             exact
             path="/AddPost"
             render={(props) => <AddPost {...props} />}
+          />
+          <Route
+            exact
+            path="/Favourites"
+            render={(props) => <Favs {...props} user={user} />}
           />
           <Route exact path="/Auth" render={(props) => <Auth {...props} />} />
           <Route
