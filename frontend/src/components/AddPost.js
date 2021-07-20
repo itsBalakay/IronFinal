@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import actions from "../api";
 
 function AddPost(props) {
-  let [post, setPost] = useState({});
+  let [post, setPost] = useState("");
   let history = useHistory();
 
   const handleChange = (e) => {
@@ -23,7 +23,7 @@ function AddPost(props) {
       <h3>Add Post</h3>
       <form onSubmit={handleSubmit}>
         <input type="text" onChange={handleChange} placeholder="Enter a post" />
-        <button>Submit</button>
+        <button>TORO</button>
       </form>
     </div>
   );
