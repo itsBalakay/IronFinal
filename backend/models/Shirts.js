@@ -8,7 +8,7 @@ const shirtSchema = new Schema({
   condition: Number,
   price: Number,
   notes: String,
-  imageUrl: String,
+  imageUrl: [String],
   //   userId: { type: Schema.Types.ObjectId, ref: "User" },
 });
 
