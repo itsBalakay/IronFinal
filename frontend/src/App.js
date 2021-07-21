@@ -9,6 +9,8 @@ import Auth from "./components/Auth";
 import AddPost from "./components/AddPost";
 import Favs from "./components/Favs";
 import Profile from "./components/Profile";
+import Retroshirts from "./components/Retroshirts";
+import Newshirts from "./components/Newshirts";
 
 function App() {
   let [user, setUser] = useState({});
@@ -60,6 +62,16 @@ function App() {
             exact
             path="/Profile"
             render={(props) => <Profile {...props} user={user} />}
+          />
+          <Route
+            exact
+            path="/RetroShirts"
+            render={(props) => <Retroshirts {...props} user={user} />}
+          />
+          <Route
+            exact
+            path="/NewShirts"
+            render={(props) => <Newshirts {...props} user={user} />}
           />
         </Switch>
       </div>

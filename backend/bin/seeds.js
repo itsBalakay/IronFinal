@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 const Shirt = require("../models/Shirts");
+
 mongoose
   .connect(
-    "mongodb+srv://mahim:mahim@cluster0.r3bte.mongodb.net/jersey?retryWrites=true&w=majority",
+    "mongodb+srv://mahim:mahim@cluster0.r3bte.mongodb.net/shirts?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(async (sell) => {

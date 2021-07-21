@@ -22,6 +22,11 @@ const actions = {
   getAllPosts: async (post) => {
     return await axios.get(`${serverUrl}/all-the-posts`, createHeaders());
   },
+
+  shirts: async () => {
+    return await axios.get(`${serverUrl}/all-the-shirts`, createHeaders());
+  },
+
   authenticate: async (profileObj) => {
     console.log(profileObj, "profileObj");
     let res = await axios.post(
