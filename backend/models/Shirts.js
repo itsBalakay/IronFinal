@@ -4,6 +4,7 @@ const shirtSchema = new Schema({
   club: String,
   year: Number,
   player: String,
+  league: String,
   size: String,
   condition: Number,
   price: Number,
