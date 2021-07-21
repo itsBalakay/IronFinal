@@ -33,7 +33,7 @@ function Home(props) {
             to="/Bundesliga"
             style={{
               textDecoration: `none`,
-              backgroundColor: `grey`,
+              backgroundColor: `white`,
               color: `black`,
             }}
           >
