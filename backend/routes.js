@@ -37,6 +37,12 @@ router.get("/all-the-shirts", (req, res) => {
   });
 });
 
+router.get("/one-shirt", (req, res) => {
+  Shirts.find().then((shirts) => {
+    res.json(shirts);
+  });
+});
+
 router.post("/authenticate", async (req, res) => {
   let user = await User.findOne({ email: req.body.email });
 

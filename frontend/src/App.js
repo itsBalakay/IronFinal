@@ -11,6 +11,7 @@ import Favs from "./components/Favs";
 import Profile from "./components/Profile";
 import Retroshirts from "./components/Retroshirts";
 import Newshirts from "./components/Newshirts";
+import Singleshirt from "./components/Singleshirt";
 
 function App() {
   let [user, setUser] = useState({});
@@ -72,6 +73,11 @@ function App() {
             exact
             path="/NewShirts"
             render={(props) => <Newshirts {...props} user={user} />}
+          />
+          <Route
+            exact
+            path="/Shirts/:shirtId"
+            render={(props) => <Singleshirt {...props} />}
           />
         </Switch>
       </div>

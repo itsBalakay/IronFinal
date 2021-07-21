@@ -27,6 +27,10 @@ const actions = {
     return await axios.get(`${serverUrl}/all-the-shirts`, createHeaders());
   },
 
+  oneShirt: async () => {
+    return await axios.get(`${serverUrl}/one-shirt`, createHeaders);
+  },
+
   authenticate: async (profileObj) => {
     console.log(profileObj, "profileObj");
     let res = await axios.post(

@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
 import actions from "../api";
+import { Link } from "react-router-dom";
+// import TheContext from "../TheContext";
 
 function Retroshirts(props) {
   const [retro, setRetro] = useState([]);
 
-  useEffect(async () => {
+  const getShirts = async () => {
     let res = await actions.shirts();
     console.log(res);
     setRetro(res.data);
+  };
+
+  useEffect(async () => {
+    getShirts();
   }, []);
 
   const ShowRetro = () => {
@@ -18,11 +22,13 @@ function Retroshirts(props) {
       return (
         <ul className="shirtList">
           <li>
-            <img
-              className="shirtImages"
-              src={retroShirt.imageUrl[0]}
-              alt="shirtpic"
-            />
+            <Link to="/Shirts/:shirtId">
+              <img
+                className="shirtImages"
+                src={retroShirt.imageUrl[0]}
+                alt="shirtpic"
+              />
+            </Link>
           </li>
           <li>{retroShirt.year}</li>
           <li>{retroShirt.club}</li>
