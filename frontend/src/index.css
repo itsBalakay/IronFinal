@@ -107,7 +107,7 @@ code {
 .shirtsPage {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 30px;
 }
 .shirtList {
