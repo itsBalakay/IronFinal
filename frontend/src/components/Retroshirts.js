@@ -23,7 +23,7 @@ function Retroshirts(props) {
       return (
         <ul className="shirtList">
           <li>
-            <Link to="/Shirts/:shirtId">
+            <Link to={`/Shirts/${retroShirt._id}`}>
               <img
                 className="shirtImages"
                 src={retroShirt.imageUrl[0]}
