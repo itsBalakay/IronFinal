@@ -36,7 +36,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/NewShirts">New Shirts</Link>
           <Link to="/RetroShirts">Retro Shirts</Link>
-          <Link to="/Favourites">Favourites</Link>
+          <Link to="/Favourites">Favorites</Link>
 
           {user?.name ? (
             <>

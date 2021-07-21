@@ -25,7 +25,7 @@ function NewShirts(props) {
           <li>{newest.year}</li>
           <li>{newest.club}</li>
           <li>{newest.size}</li>
-          <li>${newest.price}</li>
+          <li style={{ color: `red`, fontWeight: `bold` }}>${newest.price}</li>
         </ul>
       );
     });

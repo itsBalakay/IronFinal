@@ -33,7 +33,9 @@ function Bundesliga(props) {
           <li>{bunShirt.year}</li>
           <li>{bunShirt.club}</li>
           <li>{bunShirt.size}</li>
-          <li>${bunShirt.price}</li>
+          <li style={{ color: `red`, fontWeight: `bold` }}>
+            ${bunShirt.price}
+          </li>
         </ul>
       );
     });
