@@ -2,6 +2,7 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
 const Post = require("./models/Post");
+const Shirts = require("./models/Shirts");
 const User = require("./models/User");
 /**ALL OUR BACKEND ROUTES */
 
@@ -28,6 +29,12 @@ router.get("/all-the-posts", (req, res) => {
     .then((posts) => {
       res.json(posts);
     });
+});
+
+router.get("/all-the-shirts", (req, res) => {
+  Shirts.find().then((shirts) => {
+    res.json(shirts);
+  });
 });
 
 router.post("/authenticate", async (req, res) => {

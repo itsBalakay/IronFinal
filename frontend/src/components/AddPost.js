@@ -18,7 +18,7 @@ function AddPost(props) {
       <h3>Add Post</h3>
       <form onSubmit={handleSubmit}>
         <input type="text" onChange={handleChange} placeholder="Enter a post" />
-        <button>TORO</button>
+        <button>Add</button>
       </form>
     </div>
   );
