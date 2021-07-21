@@ -33,7 +33,9 @@ function NewShirts(props) {
   return (
     <div>
       <h2>New Shirts Collection</h2>
-      <ShowNew />
+      <div className="shirtsPage">
+        <ShowNew />
+      </div>
     </div>
   );
 }

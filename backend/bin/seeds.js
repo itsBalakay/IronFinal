@@ -1008,6 +1008,182 @@ const shirts = [
       "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/r/e/real-madrid-97-home-new_1_1_2_1_1_2_2_1_2_1_1_2_3_1_2_1_1.jpg",
     ],
   },
+  {
+    club: "Olympique Marseille",
+    year: 2021,
+    player: null,
+    league: "Ligue 1",
+    size: "M",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Home shirt released for the 21/22 season. Les Phocéens will be looking to improve on their 5th placed finish in the 20/21 season with Argentine manager Jorge Sampaoli starting his first full season at the French club. Milik and Payet will once again be looking to spearhead the attack with the addition of hot shot young talent Kondrad de la Fuente",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/m/a/marseille-21-home-tags.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/m/a/marseille-21-home-close.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/m/a/marseille-21-home-back.jpg",
+    ],
+  },
+  {
+    club: "AC Milan",
+    year: 2021,
+    player: "Ibrahimovic",
+    league: "Serie A",
+    size: "L",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "Home shirt for the upcoming season when the Rossoneri will hope to dethrone local rivals Inter as Serie A champions, while also competing in the UEFA Champions Leauge for the first time since the 2013-14 season. Milan have retained the services of enigmatic striker Zlatan Ibrahimović off the back of a prolific campaign in which he top-scored for the side",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-21-home-ibrahimovic.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-21-home-tags_2.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-21-home-tags-close_2.jpg",
+    ],
+  },
+  {
+    club: "AC Milan",
+    year: 2021,
+    player: "Rebic",
+    league: "Serie A",
+    size: "XL",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "Home shirt for the upcoming season when the Rossoneri will hope to dethrone local rivals Inter as Serie A champions, while also competing in the UEFA Champions Leauge for the first time since the 2013-14 season. Milan have retained the services of enigmatic striker Zlatan Ibrahimović off the back of a prolific campaign in which he top-scored for the side",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-21-home-rebic.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-21-home-tags_2_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-21-home-tags-close_2_1.jpg",
+    ],
+  },
+  {
+    club: "AC Milan",
+    year: 2021,
+    player: null,
+    league: "Serie A",
+    size: "S",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Home shirt for the upcoming season when the Rossoneri will hope to dethrone local rivals Inter as Serie A champions, while also competing in the UEFA Champions Leauge for the first time since the 2013-14 season. Milan have retained the services of enigmatic striker Zlatan Ibrahimović off the back of a prolific campaign in which he top-scored for the side",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-21-home-tags.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-21-home-back.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-21-home-tags-close.jpg",
+    ],
+  },
+  {
+    club: "Sampdoria",
+    year: 2021,
+    player: null,
+    league: "Serie A",
+    size: "M",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Third shirt released for the upcoming season, when La Samp will hope to improve on their 9th place finish from the previous campaign and secure European football. Veteran striker Fabio Quagliarella will aim to become the club's top goalscorer for the sixth consecutive season at age of 39",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/a/sampdoria-21-third-tags.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/a/sampdoria-21-third-back.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/a/sampdoria-21-third-tags-close.jpg",
+    ],
+  },
+  {
+    club: "St Pauli",
+    year: 2021,
+    player: null,
+    league: "Bundesliga",
+    size: "M",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Away shirt released for the upcoming 2.Bundesliga season, when former St Pauli midfielder Timo Schultz will once again manage the side with hopes of challenging for promotion. St Pauli and Under Armour parted ways at the end of 2020/21 season and Kiezkicker decided to start their own brand Di!Y ('Do it yourself')",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/t/st-pauli-21-away-tags.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/t/st-pauli-21-away-back.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/t/st-pauli-21-away-tags-close.jpg",
+    ],
+  },
+  {
+    club: "St Pauli",
+    year: 2021,
+    player: null,
+    league: "Bundesliga",
+    size: "L",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Home shirt released for the upcoming 2.Bundesliga season, when former St Pauli midfielder Timo Schultz will once again manage the side with hopes of challenging for promotion. St Pauli and Under Armour parted ways at the end of 2020/21 season and Kiezkicker decided to start their own brand Di!Y ('Do it yourself')",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/t/st-pauli-21-home-tags_1_2.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/t/st-pauli-21-home-back_1_2.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/t/st-pauli-21-home-close_1_2.jpg",
+    ],
+  },
+  {
+    club: "St Pauli",
+    year: 2021,
+    player: null,
+    league: "Bundesliga",
+    size: "S",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Special edition away shirt featuring 'Kein Fussball den Faschisten' (No Football for Fascists) chest sponsor as part of the club's ongoing stance against fascism, as worn during the side's final home game of the season, a 2-1 loss to Hannover. Three consecutive defeats to end the season gave St Pauli a 10th place finish in the 2.Bundesliga, with the Hamburg-based outfit having been in position to make a run at promotion just a few months earlier",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/t/st-pauli-21-away-nofascists-tags.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/t/st-pauli-21-away-nofascists-back.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/t/st-pauli-21-away-nofascists-tags-close.jpg",
+    ],
+  },
+  {
+    club: "Southampton",
+    year: 2021,
+    player: null,
+    league: "Premier League",
+    size: "S",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Home shirt released for the upcoming season, when the Saints will hope for more stability and a chance at European qualification under manager Ralph Hasenhüttl, having started the previous season on fire but ultimately settled in 15th. The shirt is the first released in a new partnership with Hummel, and features various tributes to the club's DNA and origins including references to iconic Southampton stadiums St Mary's and The Dell",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/o/southampton-21-home-tags.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/o/southampton-21-home-back.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/o/southampton-21-home-tags-close.jpg",
+    ],
+  },
+  {
+    club: "Manchester United",
+    year: 2021,
+    player: null,
+    league: "Premier League",
+    size: "M",
+    condition: 10,
+    price: 89.99,
+    notes:
+      "Youth. Courage. Success. The three pillars of Manchester United's motto have brought the club more than a century of triumphs. With its clean red design and white ribbed crewneck, this adidas home jersey takes inspiration from the iconic kit that carried them to some of their most memorable moments. Made for fans, its soft fabric and moisture-absorbing AEROREADY will keep you comfortable as a new generation of players target supremacy. A woven badge on the chest and devil signoff under the back collar put your football loyalty on display.",
+    imageUrl: [
+      "https://images.footballfanatics.com/manchester-united/manchester-united-home-shirt-2021-22_ss4_p-12075390+pv-1+u-c2vvn7pxk9iy5ouai93m+v-fd251bf031d44089956d3e205932018e.jpg?_hv=1&w=900",
+      "https://images.footballfanatics.com/manchester-united/manchester-united-home-shirt-2021-22_ss4_p-12075390+pv-2+u-c2vvn7pxk9iy5ouai93m+v-adc1fe851898409c982d68cd5af476a1.jpg?_hv=1&w=900",
+      "https://images.footballfanatics.com/manchester-united/manchester-united-home-shirt-2021-22_ss4_p-12075390+u-c2vvn7pxk9iy5ouai93m+v-e56845f24796473eb9622895a682db3d.jpg?_hv=1&w=900",
+    ],
+  },
+  {
+    club: "Arsenal",
+    year: 2021,
+    player: null,
+    league: "Premier League",
+    size: "L",
+    condition: 10,
+    price: 89.99,
+    notes:
+      "Designed to give the Gunners superiority on the pitch, Arsenal fans get a crisp new look for the upcoming season. Made with adidas' AEROREADY technology, the shirt is a replica of the one worn by the team on home matchdays. The traditional red is accented with navy and white trims, bringing back memories of the club's shirts of the late 1990s/early 2000s.",
+    imageUrl: [
+      "https://images.footballfanatics.com/arsenal/arsenal-home-shirt-2021-22_ss4_p-12053433+pv-1+u-1avq8ji9qg1bm52vn3w1+v-ef4faaecddef4411a1664930f73a6647.jpg?_hv=1&w=900",
+      "https://images.footballfanatics.com/arsenal/arsenal-home-shirt-2021-22_ss4_p-12053433+pv-2+u-1avq8ji9qg1bm52vn3w1+v-bb895b8f406f4f94bd805035a476a62d.jpg?_hv=1&w=900",
+      "https://images.footballfanatics.com/arsenal/arsenal-home-shirt-2021-22_ss4_p-12053433+u-1avq8ji9qg1bm52vn3w1+v-0255292a1a6b4da5ac22f279906585b1.jpg?_hv=1&w=900",
+    ],
+  },
 ];
 
 module.exports = shirts;

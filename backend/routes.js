@@ -37,11 +37,13 @@ router.get("/all-the-shirts", (req, res) => {
   });
 });
 
+//Fix Route for single shirt page
 router.get("/one-shirt", (req, res) => {
-  Shirts.find().then((shirts) => {
+  Shirts.findById(_id).then((shirt) => {
     res.json(shirts);
   });
 });
+//fix above route for single shirt page
 
 router.post("/authenticate", async (req, res) => {
   let user = await User.findOne({ email: req.body.email });
