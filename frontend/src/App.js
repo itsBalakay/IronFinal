@@ -35,8 +35,8 @@ function App() {
 
           {user?.name ? (
             <>
-              <Link to="/Profile">Profile</Link>
               <Link to="/AddPost">AddPost</Link>
+              <Link to="/Profile">Profile</Link>
             </>
           ) : (
             <Link to="/Auth">Login/Signup</Link>
