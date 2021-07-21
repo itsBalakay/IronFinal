@@ -29,6 +29,22 @@ const shirts = [
   },
   {
     club: "Arsenal",
+    year: 1997,
+    player: "Bergkamp",
+    league: "Premier League",
+    size: "XXL",
+    condition: 9,
+    price: 179.99,
+    notes:
+      "Home shirt as worn by Bergkamp in the 97-98 Double winning season. The Dutchman's most prolific season at Arsenal, Bergkamp scored 22 goals in 40 games as the Premiership and FA Cup came back to Highbury, as well as personally winning the PFA Player of the Year award and scoring perhaps one of the greatest hat-tricks in the history of the game away at Leicester City",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-96-home-bergkamp-new_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-96-home-premium_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-96-home-close-new_1.jpg",
+    ],
+  },
+  {
+    club: "Arsenal",
     year: 1995,
     player: "Wright",
     league: "Premier League",

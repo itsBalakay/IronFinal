@@ -12,6 +12,8 @@ import Profile from "./components/Profile";
 import Retroshirts from "./components/Retroshirts";
 import Newshirts from "./components/Newshirts";
 import Singleshirt from "./components/Singleshirt";
+import Bundesliga from "./components/Bundesliga";
+import Prem from "./components/Prem";
 
 function App() {
   let [user, setUser] = useState({});
@@ -78,6 +80,16 @@ function App() {
             exact
             path="/Shirts/:shirtId"
             render={(props) => <Singleshirt {...props} />}
+          />
+          <Route
+            exact
+            path="/Bundesliga"
+            render={(props) => <Bundesliga {...props} />}
+          />
+          <Route
+            exact
+            path="/PremierLeague"
+            render={(props) => <Prem {...props} />}
           />
         </Switch>
       </div>
