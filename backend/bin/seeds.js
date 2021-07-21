@@ -108,9 +108,9 @@ const shirts = [
     year: 2007,
     player: "Lampard",
     league: "Premier League",
-    size: "L",
-    condition: 8,
-    price: 74.99,
+    size: "M",
+    condition: 6,
+    price: 59.99,
     notes:
       "Away shirt as worn by Lampard when the side reached their first ever Champions League final and finished 2nd in the League with Avram Grant taking over after Jose Mourinho's departure",
     imageUrl: [

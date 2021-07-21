@@ -27,3 +27,20 @@ code {
   height: 50%;
   width:100%;
 }
+
+.shirtsPage{
+  display: flex; 
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin:0 30px;
+}
+.shirtList{
+  list-style: none;
+  border: lightgrey;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.shirtImages{
+  width: 200px;
+}
