@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 function Retroshirts(props) {
   const [retro, setRetro] = useState([]);
+  const [skip, setSkip] = useState(0);
 
   const getShirts = async () => {
     let res = await actions.shirts();
@@ -33,7 +34,9 @@ function Retroshirts(props) {
           <li>{retroShirt.year}</li>
           <li>{retroShirt.club}</li>
           <li>{retroShirt.size}</li>
-          <li>${retroShirt.price}</li>
+          <li style={{ color: `red`, fontWeight: `bold` }}>
+            ${retroShirt.price}
+          </li>
         </ul>
       );
     });

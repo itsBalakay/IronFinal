@@ -33,7 +33,9 @@ function Prem(props) {
           <li>{premShirt.year}</li>
           <li>{premShirt.club}</li>
           <li>{premShirt.size}</li>
-          <li>${premShirt.price}</li>
+          <li style={{ color: `red`, fontWeight: `bold` }}>
+            ${premShirt.price}
+          </li>
         </ul>
       );
     });
