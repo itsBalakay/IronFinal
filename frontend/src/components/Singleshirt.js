@@ -7,8 +7,8 @@ function Singleshirt(props) {
   useEffect(async () => {
     console.log("is useEffect working?");
     let res = await actions.oneShirt;
-    console.log(res);
-    setSingleShirt(res);
+    console.log(res.data);
+    setSingleShirt(res.data);
   }, []);
 
   return (

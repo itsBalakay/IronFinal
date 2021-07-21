@@ -4,6 +4,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif; */
   font-family: "MonoLisa";
+  background-color: antiquewhite;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -59,8 +60,8 @@ code {
   -webkit-filter: grayscale(0) blur(0);
   filter: grayscale(0) blur(0);
   transition: .4s ease-in-out;
-} */
-/* .halfHome-1:hover:before {
+} 
+.halfHome-1:hover:before {
   -webkit-filter: grayscale(100%) blur(2px);
   filter: grayscale(100%) blur(2px);
   transition: .4s ease-in-out;
@@ -83,7 +84,7 @@ code {
   width: 100%;
   height: 100%;
   text-align: center;
-} */
+}  */
 
 .halfHome-2 {
   width: 50%;
@@ -109,11 +110,18 @@ code {
 }
 .shirtList {
   list-style: none;
+  background-color: white;
   border: lightgrey;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .shirtImages {
   width: 200px;
+}
+
+.pagination {
+  justify-content: center;
 }

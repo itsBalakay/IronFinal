@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 function Retroshirts(props) {
   const [retro, setRetro] = useState([]);
-  const [skip, setSkip] = useState(0);
 
   const getShirts = async () => {
     let res = await actions.shirts();

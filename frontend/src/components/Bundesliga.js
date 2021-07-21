@@ -2,23 +2,42 @@ import React from "react";
 import { useState, useEffect } from "react";
 import actions from "../api";
 import { Link } from "react-router-dom";
+import Pagination from "./Pagination";
 
 function Bundesliga(props) {
   const [bun, setBun] = useState([]);
 
+  //added for pagination
+  //const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage] = useState(9);
+
   const getShirts = async () => {
     let res = await actions.shirts();
+    //setLoading(true);
     console.log(res);
     setBun(res.data);
+    //setLoading(false); //added for pagination
+    console.log(postPerPage);
   };
 
-  useEffect(async () => {
-    getShirts();
+  useEffect(async (e) => {
+    await getShirts();
   }, []);
 
+  let filterBun = bun.filter((bun) => bun.league === "Bundesliga");
+  //added for pagination
+  const indexOfLastShirt = currentPage * postPerPage;
+  const indexOfFirstShirt = indexOfLastShirt - postPerPage;
+  const currentShirt = filterBun.slice(indexOfFirstShirt, indexOfLastShirt);
+
+  //change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
   const ShowBun = () => {
-    let filterBun = bun.filter((bun) => bun.league === "Bundesliga");
-    return filterBun.map((bunShirt) => {
+    // if (loading) {
+    //   return <h2>Loading...</h2>;
+    // }
+    return currentShirt.map((bunShirt) => {
       return (
         <ul className="shirtList">
           <li>
@@ -45,6 +64,14 @@ function Bundesliga(props) {
       <h2>Bundesliga</h2>
       <div className="shirtsPage">
         <ShowBun />
+      </div>
+      <div>
+        {/* added for pagination */}
+        <Pagination
+          postPerPage={postPerPage}
+          totalPosts={filterBun.length}
+          paginate={paginate}
+        />
       </div>
     </div>
   );
