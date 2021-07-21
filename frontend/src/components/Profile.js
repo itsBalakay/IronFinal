@@ -11,9 +11,11 @@ function Profile(props) {
 
   return (
     <div>
-      <h2>Profile {props.user?.name}</h2>
+      <h2>{props.user?.name}</h2>
       <img src={user?.imageUrl} />
-      <button onClick={logOut}>Log out</button>
+      <div>
+        <button onClick={logOut}>Log out</button>
+      </div>
     </div>
   );
 }
