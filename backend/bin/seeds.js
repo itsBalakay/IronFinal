@@ -1200,6 +1200,352 @@ const shirts = [
       "https://images.footballfanatics.com/arsenal/arsenal-home-shirt-2021-22_ss4_p-12053433+u-1avq8ji9qg1bm52vn3w1+v-0255292a1a6b4da5ac22f279906585b1.jpg?_hv=1&w=900",
     ],
   },
+  {
+    club: "Manchester United",
+    year: 1990,
+    player: null,
+    league: "Premier League",
+    size: "M",
+    condition: 8,
+    price: 389.99,
+    notes:
+      "Classic United away shirt worn from 1990-92. The stand out design paired with the iconic Sharp sponsor have made this shirt a must-have for any collector. This away shirt was notably worn in the 6-2 win at Arsenal, and the 1992 League Cup final, where a goal from Brian McClair helped United beat Notts Forest 1-0 at Wembley.",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/m/a/man-united-90-away_1_2_2_2_1_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/m/a/man-united-90-away-premium-1_1_1_2_2_1_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/m/a/man-united-90-away-premium-4_1_1_2_2_1_1.jpg",
+    ],
+  },
+  {
+    club: "AC Milan",
+    year: 2008,
+    player: "Nesta",
+    league: "Serie A",
+    size: "XL",
+    condition: 7,
+    price: 129.99,
+    notes:
+      "Third shirt from the last season of Carlo Ancelotti's reign as manager, the side finished 3rd in Serie A and qualified for the Champions League after competiting in the in UEFA Cup this season. Nesta made only 1 appearance this season after struggling with serious back injuries which put his career in doubt. However the Italian made his comeback in the final away game of the season against Fiorentina.",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-08-third-nesta_2.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-08-third-patcheswear_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-08-third-patcheswear-close_1.jpg",
+    ],
+  },
+  {
+    club: "AC Milan",
+    year: 1992,
+    player: null,
+    league: "Serie A",
+    size: "XL",
+    condition: 8,
+    price: 329.99,
+    notes:
+      "Extremely rare Adidas home shirt only worn for one season when the side retained their Serie A title but lost out to Marseille in the European Cup Final",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-92-home-ls-premium_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-92-home-ls-back-new_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-92-home-ls-close-new_1.jpg",
+    ],
+  },
+  {
+    club: "AC Milan",
+    year: 2003,
+    player: "Shevchenko",
+    league: "Serie A",
+    size: "M",
+    condition: 8,
+    price: 139.99,
+    notes:
+      "Home shirt as worn by Sheva when the side attempted to defend their Champions League title but were left stunned by Deportivo in the Quarter Finals after the Spanish side overturned a 4-1 first leg deficit to progress",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-03-home-pi-shev_4_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/c/ac-milan-03-home_9_3_2_1_1_1_4_2_1_1.jpg",
+    ],
+  },
+  {
+    club: "Fiorentina",
+    year: 1991,
+    player: null,
+    league: "Serie A",
+    size: "L",
+    condition: 8,
+    price: 209.99,
+    notes:
+      "Rare home shirt with classic Giocheria sponsor as worn by Batigol in his first season in Florence when he scored 13 goals in 27 games",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/700x700/0dc2d03fe217f8c83829496872af24a0/f/i/fiorentina-91-home-mi_3_1_3_1.jpg",
+    ],
+  },
+  {
+    club: "Fiorentina",
+    year: 1996,
+    player: null,
+    league: "Serie A",
+    size: "XL",
+    condition: 7,
+    price: 179.99,
+    notes:
+      "Very rare classic design away shirt as worn during Claudio Ranieri's final season as manager the La Viola reached the Cup Winners Cup Semi-Finals. Batigol scored a great goal in the 1st leg against Barcelona but the side were ultimately undone by the Catalans back in Florence",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/700x700/0dc2d03fe217f8c83829496872af24a0/f/i/fiorentina-96-away_1_1_2_1.jpg",
+    ],
+  },
+  {
+    club: "Fiorentina",
+    year: 2013,
+    player: "Gomez",
+    league: "Serie A",
+    size: "M",
+    condition: 8,
+    price: 99.99,
+    notes:
+      "Home shirt as worn when the Viola reached the Coppa Italia Final, looking to claim their first major trophy in 13 years, but were defeated by a strong Napoli side. In Serie A boss Vincenzo Montella guided them to a respectable 4th place finish. Gómez sustained an injury that limited his appearances in his first season from Bayern Munich. Managing to score 4 in 15 appearances, he remained at the club for one more season before heading out on loan to Turkish side Besiktas",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/f/i/fiorentina-13-home-gomez_6.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/f/i/fiorentina-13-home_2_6.jpg",
+    ],
+  },
+  {
+    club: "Fiorentina",
+    year: 2005,
+    player: "Guigou",
+    league: "Serie A",
+    size: "M",
+    condition: 7,
+    price: 169.99,
+    notes:
+      "Very rare player shirt believed to have been issued to or worn by Guigou during the 2005-06 season. The defender had joined La Viola from Roma the previous season but struggled for game time featuring just 6 times in his first campaign at the Artemio Franchi. This year wasn't much better for the Uruguayan as he made 5 appearances before being loaned out to bottom side Treviso in January . Fiorentina themselves finished fourth in Serie A but were demoted to 9th following their role in the Calciopoli scandal. Guigou opted to join Treviso permanently at the end of the season and would spend another 3 seasons in Italy before returning to Uruguay and the club he started out with, Nacional. The 41 time international had won the Serie A title with Roma in 2000 and had also been a runner-up at the 1999 Copa América with his country.",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/f/i/fiorentina-05-home-mw-guigou-back.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/f/i/fiorentina-05-home-mw-guigou-front.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/f/i/fiorentina-05-home-mw-guigou-close.jpg",
+    ],
+  },
+  {
+    club: "Inter Milan",
+    year: 1997,
+    player: "Ronaldo",
+    league: "Serie A",
+    size: "XL",
+    condition: 9,
+    price: 369.99,
+    notes:
+      "Home shirt as worn in Ronaldo's first season at the club following a world record switch from Barcelona. The Brazilian was crowned with the Ballon d'Or in 1997 and hit a superb 34 goals in all competitions as he fired Inter close to the Serie A title",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/i/n/inter-97-home-ronaldo_1_2_3_1_1_1_2_2_1_1_1_1_4_1_1_1_1_2_2_1_2_2_2_2_1_1_2_1_1_1_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/i/n/inter-97-home-_1_5_2_1_1_1_1.jpg",
+    ],
+  },
+  {
+    club: "Inter Milan",
+    year: 2010,
+    player: "Lucio",
+    league: "Serie A",
+    size: "XL",
+    condition: 10,
+    price: 209.99,
+    notes:
+      "Away shirt as worn when Inter won the FIFA World Club Cup under new boss Rafa Benitez, this style of shirt was used in the Semi-Final where the Nerazzurri thrashed Seongnam 3-0 to reach the Final. It was to be one of Benitez's last acts as manager as he was replaced by Leonardo",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/i/n/inter-10-away-tags-lucio_2_1_1_1_1_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1352x/0dc2d03fe217f8c83829496872af24a0/i/n/inter-10-away-shirt-wtags_1.jpg",
+    ],
+  },
+  {
+    club: "Inter Milan",
+    year: 2008,
+    player: "Ibrahimovic",
+    league: "Serie A",
+    size: "S",
+    condition: 9,
+    price: 109.99,
+    notes:
+      "Away shirt as worn by Ibrahimović in José Mourinho's first season in charge when he guided the side to another Serie A title. Ibrahimović performed one of the most spectacular passes ever seen on a football field in this design. The Swedish hitman finished top scorer in all competitions with 26 goals",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/i/n/inter-08-away-ibrahimovic_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/i/n/inter-08-away_2_2_1_1_2_1_2_1_1_1_.jpg",
+    ],
+  },
+  {
+    club: "Inter Milan",
+    year: 2008,
+    player: "Figo",
+    league: "Serie A",
+    size: "XL",
+    condition: 9,
+    price: 139.99,
+    notes:
+      "Away shirt as worn by Figo in Jose Mourinho's first season in charge when he guided the side to their 4th consecutive Scudetto. This was to be the Portuguese legend's final season in professional football",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/i/n/inter-08-away-figo_2_1_4_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/i/n/inter-08-away-scud_1_1_1_1.jpg",
+    ],
+  },
+  {
+    club: "Juventus",
+    year: 2003,
+    player: "Nedved",
+    league: "Serie A",
+    size: "S",
+    condition: 7,
+    price: 139.99,
+    notes:
+      "Third shirt as worn by Pavel Nedvěd when he won the Ballon d'Or. This was Marcello Lippi's final season in charge of the club after a distant third place Serie A finish.",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/j/u/juventus-03-third-nedved-new.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/j/u/juventus-03-third-new_1.jpg",
+    ],
+  },
+  {
+    club: "Juventus",
+    year: 2014,
+    player: "Pogba",
+    league: "Serie A",
+    size: "L",
+    condition: 7,
+    price: 129.99,
+    notes:
+      "Away shirt as worn when the Bianconeri famously reached their first Champions League final since 2003 after dumping out holders Real Madrid in the semi-final. In the Berlin showpiece they ran a rampant Barcelona close but eventually lost out 3-1, just missing out on a historic treble in Massimiliano Allegri's first season in charge after earlier clinching the Coppa Italia and fourth successive Scudetto title",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/j/u/juventus-14-away-pogba_1_2.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/j/u/juventus-14-away-noscud.jpg",
+    ],
+  },
+  {
+    club: "Juventus",
+    year: 2002,
+    player: "Del Piero",
+    league: "Serie A",
+    size: "XL",
+    condition: 7,
+    price: 139.99,
+    notes:
+      "Away shirt as worn when the side retained their Serie A title, finishing 7 points clear of runners-up Inter",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/j/u/juventus-02-away-del-piero_4_1_1_2_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/j/u/juventus-02-away_3_1_1_2_1.jpg",
+    ],
+  },
+  {
+    club: "Juventus",
+    year: 2018,
+    player: "Ronaldo",
+    league: "Serie A",
+    size: "L",
+    condition: 10,
+    price: 59.99,
+    notes:
+      "Away shirt as worn when The Old Lady retained the Serie A title for the 8th consecutive time following the signing of Portuguese superstar Cristiano Ronaldo for a club record fee of €100M. The club fell short in the Champions League as they were shocked by Ajax in the Quarter-finals",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/743x/0dc2d03fe217f8c83829496872af24a0/j/u/juventus-18-away-ronaldo_1_4.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/j/u/juventus-18-away-tags_3_1_4.jpg",
+    ],
+  },
+  {
+    club: "Napoli",
+    year: 2018,
+    player: "Insigne",
+    league: "Serie A",
+    size: "M",
+    condition: 10,
+    price: 69.99,
+    notes:
+      "Player specification third shirt as worn during the season in which the side finished runners up to Juventus for the 4th time since the 2012-13 campaign with Carlo Ancelotti taking over from Maurizio Sarri as manager. The side were eliminated from the Champions League Group Stage after a final gameweek loss to eventual champions Liverpool. The side then progressed to the Quarter Finals of the Europa League before being defeated by Arsenal",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/n/a/napoli-18-third-auth-insigne.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/n/a/napoli-18-third-auth-tags2_1_1_1.jpg",
+    ],
+  },
+  {
+    club: "Napoli",
+    year: 2017,
+    player: "Mertens",
+    league: "Serie A",
+    size: "L",
+    condition: 10,
+    price: 59.99,
+    notes:
+      "Authentic home shirt designed for use in European competition in the season when the side achieved an impressive tally of 91 points, this was not enough however for Maurizio Sarri's side to seal their first title in 28 years as they finished as runners-up in Serie A. In Europe the side crashed out of the Champions League at the group stage but did manage a Europa League place thanks to their 3rd place in the group. They reached the Round of 32 in the Europa League, losing out to RB Leipzig",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/n/a/napoli-17-home-eu-ls-mertens.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/n/a/napoli-17-home-eu-ls-tags_2_1.jpg",
+    ],
+  },
+  {
+    club: "Roma",
+    year: 2014,
+    player: "De Rossi",
+    league: "Serie A",
+    size: "L",
+    condition: 7,
+    price: 99.99,
+    notes:
+      "Home shirt as worn by the Giallorossi in the first season of their new kit deal with Nike. Rudi Garcia's side had to settle for being runners-up in Serie A once again and ended up in the Europa League after defeats to Bayern and Man City in the Champions League group stage",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/r/o/roma-14-home-derosi_1_2_1_1_1_2.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/r/o/roma-14-home-_4_2_1_1_1_1_1_1_1_1_2.jpg",
+    ],
+  },
+  {
+    club: "Roma",
+    year: 2000,
+    player: "Cafu",
+    league: "Serie A",
+    size: "XL",
+    condition: 5,
+    price: 149.99,
+    notes:
+      "Classic tight-fit design home shirt as worn in the season when the club won their third Scudetto on a thrilling final day. Cafu continued to be a dominant force in both attack and defence down the right hand side. The hardworking full back played 40 times this campaign",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/n/v/nvc_10091_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/n/v/nvc_10089_1.jpg",
+    ],
+  },
+  {
+    club: "Roma",
+    year: 2015,
+    player: "Totti",
+    league: "Serie A",
+    size: "S",
+    condition: 10,
+    price: 89.99,
+    notes:
+      "Third shirt as worn in the season when Luciano Spalletti returned to the Stadio Olimpico and guided the side to a comfortable 3rd place finish in Serie A and lost out in the Champions League to eventual winners Real Madrid",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/r/o/roma-15-third-tags-totti_3_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/r/o/roma-15-third-tags_5_1_2_1.jpg",
+    ],
+  },
+  {
+    club: "Liverpool",
+    year: 2021,
+    player: null,
+    league: "Premier League",
+    size: "M",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Crafted in stone and celebrated in style, LFC supporters will bring back memories of Barnes, Fowler and McManaman with this away stadium shirt from Nike. Inspired by the 96/97 season design, the shirt sees a dark atomic teal and crimson appear on both the collar and cuffs. While the patented Dri-FIT technology, meaning supporters get the same feel as the players do on an away matchday – one of being cool and dry when the Reds crank it up a notch.",
+    imageUrl: [
+      "https://store.liverpoolfc.com/media/catalog/product/cache/dd504f005c0b90ffe1b9fb2344db1a87/d/b/db2566e_a.jpg",
+      "https://store.liverpoolfc.com/media/catalog/product/cache/dd504f005c0b90ffe1b9fb2344db1a87/d/b/db2566e_b.jpg",
+    ],
+  },
+  {
+    club: "Liverpool",
+    year: 2021,
+    player: null,
+    league: "Premier League",
+    size: "M",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Crafted in stone and celebrated in style, LFC supporters will bring back memories of Barnes, Fowler and McManaman with this away stadium shirt from Nike. Inspired by the 96/97 season design, the shirt sees a dark atomic teal and crimson appear on both the collar and cuffs. While the patented Dri-FIT technology, meaning supporters get the same feel as the players do on an away matchday – one of being cool and dry when the Reds crank it up a notch.",
+    imageUrl: [
+      "https://store.liverpoolfc.com/media/catalog/product/cache/dd504f005c0b90ffe1b9fb2344db1a87/d/b/db2560r_a.jpg",
+    ],
+  },
 ];
 
 module.exports = shirts;
