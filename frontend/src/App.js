@@ -13,6 +13,8 @@ import Retroshirts from "./components/Retroshirts";
 import Newshirts from "./components/Newshirts";
 import Singleshirt from "./components/Singleshirt";
 import Bundesliga from "./components/Bundesliga";
+import LaLiga from "./components/LaLiga";
+import SerieA from "./components/SerieA";
 import Prem from "./components/Prem";
 import Search from "./components/Search";
 import { useHistory } from "react-router-dom";
@@ -145,6 +147,16 @@ function App() {
             exact
             path="/PremierLeague"
             render={(props) => <Prem {...props} />}
+          />
+          <Route
+            exact
+            path="/LaLiga"
+            render={(props) => <LaLiga {...props} />}
+          />
+          <Route
+            exact
+            path="/SerieA"
+            render={(props) => <SerieA {...props} />}
           />
           <Route exact path="/Mycart" render={(props) => <Cart {...props} />} />
           <Route

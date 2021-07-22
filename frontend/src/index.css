@@ -77,7 +77,7 @@ code {
 }
 
 .bottomHome {
-  margin: 100px 100px;
+  margin: 0px 100px 100px 100px;
   display: flex;
   justify-content: space-around;
   height: 300px;
@@ -149,6 +149,42 @@ code {
   border-radius: 3px;
 }
 
+
+.bottomHome-2{
+  margin: 100px 100px;
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+}
+.halfHome-3 {
+  width: 50%;
+  height: 100%;
+  background-image: url("https://1.bp.blogspot.com/-T_5oT_bHUjs/YN-Su7r7CiI/AAAAAAACsqI/hseGs1OkrSUIh7SGAiFkLFTy3NU7axlFwCLcBGAsYHQ/s1000/21-22-la-liga-kits.jpg");
+  background-size: 100%;
+  margin: 0px 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #7dba5d;
+  border-radius: 3px;
+}
+.halfHome-4{
+  width: 50%;
+  height: 100%;
+  background-image: url("https://pbs.twimg.com/media/DLTSoGxXoAAoEOr.jpg");
+  background-size: 100%;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #7dba5d;
+  border-radius: 3px;
+}
+
+
+
+
 /* Css for Shirts Pages */
 .shirtsPage {
   display: flex;
@@ -185,6 +221,7 @@ code {
 }
 .singleShirtFlex {
   display: flex;
+  padding: 0 4% 0 0 
 }
 
 .singleDescription {

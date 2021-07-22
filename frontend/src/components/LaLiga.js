@@ -4,8 +4,8 @@ import actions from "../api";
 import { Link } from "react-router-dom";
 import Pagination from "./Pagination";
 
-function Bundesliga(props) {
-  const [bun, setBun] = useState([]);
+function LaLiga(props) {
+  const [liga, setLiga] = useState([]);
 
   //added for pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -13,42 +13,42 @@ function Bundesliga(props) {
 
   const getShirts = async () => {
     let res = await actions.shirts();
-    setBun(res.data);
+    setLiga(res.data);
   };
 
   useEffect(async () => {
     getShirts();
   }, []);
 
-  let filterBun = bun.filter((bun) => bun.league === "Bundesliga");
+  let filterLiga = liga.filter((liga) => liga.league === "La Liga");
   //added for pagination
   const indexOfLastShirt = currentPage * postPerPage;
   const indexOfFirstShirt = indexOfLastShirt - postPerPage;
-  const currentShirt = filterBun.slice(indexOfFirstShirt, indexOfLastShirt);
+  const currentShirt = filterLiga.slice(indexOfFirstShirt, indexOfLastShirt);
 
   //change page
   const paginate = (pageNumber) => {
     console.log(pageNumber);
     setCurrentPage(pageNumber);
   };
-  const ShowBun = () => {
-    return currentShirt.map((bunShirt) => {
+  const ShowLiga = () => {
+    return currentShirt.map((ligaShirt) => {
       return (
         <ul className="shirtList">
           <li>
-            <Link to={`/Shirts/${bunShirt._id}`}>
+            <Link to={`/Shirts/${ligaShirt._id}`}>
               <img
                 className="shirtImages"
-                src={bunShirt.imageUrl[0]}
+                src={ligaShirt.imageUrl[0]}
                 alt="shirtpic"
               />
             </Link>
           </li>
-          <li>{bunShirt.year}</li>
-          <li>{bunShirt.club}</li>
-          <li>{bunShirt.size}</li>
+          <li>{ligaShirt.year}</li>
+          <li>{ligaShirt.club}</li>
+          <li>{ligaShirt.size}</li>
           <li style={{ color: `red`, fontWeight: `bold` }}>
-            ${bunShirt.price}
+            ${ligaShirt.price}
           </li>
           <li>
             <Link to="/Mycart">
@@ -61,15 +61,15 @@ function Bundesliga(props) {
   };
   return (
     <div>
-      <h2>Bundesliga</h2>
+      <h2>La Liga</h2>
       {/* <Search shirts={filterBun} /> */}
       <div className="shirtsPage">
-        <ShowBun />
+        <ShowLiga />
       </div>
       <div>
         <Pagination
           postPerPage={postPerPage}
-          totalPosts={filterBun.length}
+          totalPosts={filterLiga.length}
           paginate={paginate}
         />
       </div>
@@ -77,4 +77,4 @@ function Bundesliga(props) {
   );
 }
 
-export default Bundesliga;
+export default LaLiga;
