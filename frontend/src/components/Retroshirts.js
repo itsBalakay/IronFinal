@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import actions from "../api";
 import { Link } from "react-router-dom";
+import Pagination from "./Pagination";
 
 function Retroshirts(props) {
   const [retro, setRetro] = useState([]);
+
+  //added for pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage] = useState(18);
 
   const getShirts = async () => {
     let res = await actions.shirts();
@@ -15,9 +20,20 @@ function Retroshirts(props) {
     getShirts();
   }, []);
 
+  let filterRetro = retro.filter((retro) => retro.year <= 2020);
+  //added for pagination
+  const indexOfLastShirt = currentPage * postPerPage;
+  const indexOfFirstShirt = indexOfLastShirt - postPerPage;
+  const currentShirt = filterRetro.slice(indexOfFirstShirt, indexOfLastShirt);
+
+  //change page
+  const paginate = (pageNumber) => {
+    console.log(pageNumber);
+    setCurrentPage(pageNumber);
+  };
+
   const ShowRetro = () => {
-    let filterRetro = retro.filter((retro) => retro.year <= 2020);
-    return filterRetro.map((retroShirt) => {
+    return currentShirt.map((retroShirt) => {
       return (
         <>
           <ul className="shirtList">
@@ -49,6 +65,13 @@ function Retroshirts(props) {
       <h2>Retro collection</h2>
       <div className="shirtsPage">
         <ShowRetro />
+      </div>
+      <div>
+        <Pagination
+          postPerPage={postPerPage}
+          totalPosts={filterRetro.length}
+          paginate={paginate}
+        />
       </div>
     </div>
   );
