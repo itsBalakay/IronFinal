@@ -93,6 +93,7 @@ function App() {
             path="/PremierLeague"
             render={(props) => <Prem {...props} />}
           />
+          <Route exact path="/Mycart" render={(props) => <Cart {...props} />} />
         </Switch>
       </div>
     </TheContext.Provider>
