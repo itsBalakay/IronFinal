@@ -173,3 +173,32 @@ code {
 .pagination {
   justify-content: center;
 }
+
+/*Single Shirt CSS */
+
+.singleShirtContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 150px;
+}
+.singleShirtFlex {
+  display: flex;
+}
+
+.singleDescription {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: azure;
+}
+
+.singleDescription ul li {
+  list-style: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+
+  /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px green, 0 0 30px green,
+    0 0 40px green, 0 0 55px green, 0 0 70px green; */
+}
