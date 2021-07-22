@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
+import YoutubeEmbed from "./YoutubeEmbed";
 
 function Home(props) {
   // const [allPosts, setAllPosts] = useState([]);
@@ -50,6 +51,7 @@ function Home(props) {
           </Link>
         </div>
       </div>
+      <YoutubeEmbed embedId="KlbRiCYE-OQ" />
     </>
   );
 }
