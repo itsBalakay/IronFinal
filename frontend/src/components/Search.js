@@ -10,6 +10,11 @@ function Search({ shirts }) {
     setSearchTerm(e.target.value);
   };
 
+  const submitSearch = (e) => {
+    e.preventDefault();
+    //handleOnSubmit();
+  };
+
   useEffect(() => {
     let results = shirts.filter((shirt) => {
       return shirt.toString().toLowerCase().includes(searchTerm);
@@ -43,12 +48,15 @@ function Search({ shirts }) {
 
   return (
     <div className="search">
-      <input
-        type="text"
-        placeholder="Search Item..."
-        value={searchTerm}
-        onChange={handleChange}
-      />
+      <div>
+        <input
+          type="text"
+          placeholder="Search Item..."
+          value={searchTerm}
+          onChange={handleChange}
+        />
+      </div>
+
       <div>
         <ShowSearch />
       </div>
