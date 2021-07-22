@@ -14,9 +14,22 @@ function Favs(props) {
 
   const ShowPosts = () =>
     allPosts.map((eachPost) => (
-      <li key={eachPost._id}>
-        {eachPost.club} <i>created by ...{eachPost.userId?.name}</i>
-      </li>
+      <ul key={eachPost._id}>
+        <li>
+          <img
+            style={{ width: "25%" }}
+            src={eachPost.imageUrl}
+            alt="shirtcollection"
+          />
+        </li>
+        <li>Club: {eachPost.club}</li>
+        <li>League: {eachPost.league}</li>
+        <li>Player: {eachPost.player}</li>
+        <li>Notes: {eachPost.notes}</li>
+        <li>
+          <i>posted by: {eachPost.userId?.name}</i>
+        </li>
+      </ul>
     ));
 
   return (
