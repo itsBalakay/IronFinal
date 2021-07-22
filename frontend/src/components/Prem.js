@@ -37,7 +37,7 @@ function Prem(props) {
       return (
         <ul className="shirtList">
           <li>
-            <Link to="/Shirts/:shirtId">
+            <Link to={`/Shirts/${premShirt._id}`}>
               <img
                 className="shirtImages"
                 src={premShirt.imageUrl[0]}

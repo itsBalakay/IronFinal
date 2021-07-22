@@ -37,7 +37,7 @@ function Bundesliga(props) {
       return (
         <ul className="shirtList">
           <li>
-            <Link to="/Shirts/:shirtId">
+            <Link to={`/Shirts/${bunShirt._id}`}>
               <img
                 className="shirtImages"
                 src={bunShirt.imageUrl[0]}
