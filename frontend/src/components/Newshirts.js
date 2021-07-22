@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import actions from "../api";
+import Pagination from "./Pagination";
 
 function NewShirts(props) {
   const [newShirt, setNewShirt] = useState([]);
+  //added for pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage] = useState(18);
 
   useEffect(async () => {
     let res = await actions.shirts();
@@ -10,9 +14,21 @@ function NewShirts(props) {
     setNewShirt(res.data);
   }, []);
 
+  let filterNew = newShirt.filter((newShirt) => newShirt.year > 2020);
+  //added for pagination
+  const indexOfLastShirt = currentPage * postPerPage;
+  const indexOfFirstShirt = indexOfLastShirt - postPerPage;
+  const currentShirt = filterNew.slice(indexOfFirstShirt, indexOfLastShirt);
+
+  //change page
+  const paginate = (pageNumber) => {
+    console.log(pageNumber);
+    setCurrentPage(pageNumber);
+  };
+
   const ShowNew = () => {
     let filterNew = newShirt.filter((newShirt) => newShirt.year > 2020);
-    return filterNew.map((newest) => {
+    return currentShirt.map((newest) => {
       return (
         <>
           <ul className="shirtList">
@@ -42,6 +58,13 @@ function NewShirts(props) {
       <h2>New Shirts Collection</h2>
       <div className="shirtsPage">
         <ShowNew />
+      </div>
+      <div>
+        <Pagination
+          postPerPage={postPerPage}
+          totalPosts={filterNew.length}
+          paginate={paginate}
+        />
       </div>
     </div>
   );
