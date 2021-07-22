@@ -5,19 +5,29 @@ import actions from "../api";
 function AddPost(props) {
   let [post, setPost] = useState("");
   let history = useHistory();
+
   const handleChange = (e) => {
-    setPost(e.target.value);
+    let newPost = { ...post };
+    newPost[e.target.placeholder] = e.target.value;
+    setPost(newPost);
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     let res = await actions.addPost({ post });
     history.push("/favourites"); //props.history.push is also an option
   };
+
   return (
     <div>
       <h3>Add Post</h3>
       <form onSubmit={handleSubmit}>
-        <input type="text" onChange={handleChange} placeholder="Enter a post" />
+        <input type="text" onChange={handleChange} placeholder="Club" />
+        <input type="text" onChange={handleChange} placeholder="Year" />
+        <input type="text" onChange={handleChange} placeholder="Player" />
+        <input type="text" onChange={handleChange} placeholder="League" />
+        <input type="text" onChange={handleChange} placeholder="Notes" />
+        <input type="text" onChange={handleChange} placeholder="ImageUrl" />
         <button>Add</button>
       </form>
     </div>
