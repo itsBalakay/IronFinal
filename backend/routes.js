@@ -39,7 +39,7 @@ router.get("/all-the-shirts", (req, res) => {
 
 //Fix Route for single shirt page
 router.get("/one-shirt", (req, res) => {
-  Shirts.findById(_id).then((shirt) => {
+  Shirts.findById(_id).then((shirts) => {
     res.json(shirts);
   });
 });

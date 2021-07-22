@@ -52,7 +52,9 @@ function Bundesliga(props) {
             ${bunShirt.price}
           </li>
           <li>
-            <button>Add to Cart</button>
+            <Link to="/Mycart">
+              <button>Add to Cart</button>
+            </Link>
           </li>
         </ul>
       );

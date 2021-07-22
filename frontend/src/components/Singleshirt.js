@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import actions from "../api";
 
-function Singleshirt(props) {
+function Singleshirt({ _id }) {
   const [singleShirt, setSingleShirt] = useState([]);
 
   useEffect(async () => {

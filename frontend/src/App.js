@@ -14,6 +14,7 @@ import Newshirts from "./components/Newshirts";
 import Singleshirt from "./components/Singleshirt";
 import Bundesliga from "./components/Bundesliga";
 import Prem from "./components/Prem";
+import Cart from "./components/Cart";
 
 function App() {
   let [user, setUser] = useState({});
@@ -37,6 +38,7 @@ function App() {
           <Link to="/NewShirts">New Shirts</Link>
           <Link to="/RetroShirts">Retro Shirts</Link>
           <Link to="/Favourites">Favorites</Link>
+          <Link to="/Mycart">Cart</Link>
 
           {user?.name ? (
             <>
