@@ -34,11 +34,13 @@ function NewShirts(props) {
         <>
           <ul className="shirtList">
             <li>
-              <img
-                className="shirtImages"
-                src={newest.imageUrl[0]}
-                alt="shirtpic"
-              />
+              <Link to={`/Shirts/${newest._id}`}>
+                <img
+                  className="shirtImages"
+                  src={newest.imageUrl[0]}
+                  alt="shirtpic"
+                />
+              </Link>
             </li>
             <li>{newest.year}</li>
             <li>{newest.club}</li>
