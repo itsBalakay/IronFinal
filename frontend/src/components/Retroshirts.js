@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import actions from "../api";
 import { Link } from "react-router-dom";
-// import TheContext from "../TheContext";
 
 function Retroshirts(props) {
   const [retro, setRetro] = useState([]);
