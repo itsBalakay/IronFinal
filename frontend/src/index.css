@@ -92,6 +92,8 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 3px solid #7dba5d;
+  border-radius: 3px;
   /* -webkit-filter: grayscale(0) blur(0);
     filter: grayscale(0) blur(0);
     transition: .4s ease-in-out; */
@@ -143,6 +145,8 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 3px solid #7dba5d;
+  border-radius: 3px;
 }
 .prem-image-home {
   width: 100%;

@@ -10,7 +10,7 @@ function Bundesliga(props) {
   //added for pagination
   // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1); //state not setting after render so only renders whatever number page is there or state not setting at all
-  const [postPerPage] = useState(9);
+  const [postPerPage] = useState(18);
 
   const getShirts = async () => {
     let res = await actions.shirts();

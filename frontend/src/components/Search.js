@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from 'react-router-dom'
 
 function Search(props) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -15,6 +16,28 @@ function Search(props) {
     setSearchResults(results);
   }, [searchTerm]);
 
+  function ShowSearch(){
+    return searchResults.map((item) => {
+        return(
+        <ul>
+        <li>
+        <Link to={`/Shirts/${item._id}`}>
+          <img
+            className="shirtImages"
+            src={item.imageUrl[0]}
+            alt="shirtpic"
+          />
+        </Link></li>
+        <li>{item.year}</li>
+      <li>{item.club}</li>
+      <li>{item.size}</li>
+      <li style={{ color: `red`, fontWeight: `bold` }}>
+        ${item.price}
+      </li>
+      </ul>)
+    }
+    }
+
   return (
       
     <div className="search">
@@ -24,24 +47,10 @@ function Search(props) {
         value={searchTerm}
         onChange={handleChange}
       />
-      <ul>
-        {searchResults.map((item) => (
-            <li>
-            <Link to={`/Shirts/${item._id}`}>
-              <img
-                className="shirtImages"
-                src={item.imageUrl[0]}
-                alt="shirtpic"
-              />
-            </Link></li>
-            {/* <li>{item.year}</li>
-          <li>{item.club}</li>
-          <li>{item.size}</li>
-          <li style={{ color: `red`, fontWeight: `bold` }}>
-            ${item.price}
-          </li> */}
-        ))}
-      </ul>
+      <div>
+      
+      </div>
+      
     </div>
     
   );
