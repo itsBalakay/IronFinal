@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import actions from "../api";
 import { Link } from "react-router-dom";
+import ImageSlider from "./ImageSlider";
+import { SliderData } from "./SliderData";
 
 function Home(props) {
   // const [allPosts, setAllPosts] = useState([]);
@@ -22,7 +21,8 @@ function Home(props) {
   return (
     <>
       <div className="header-img-div">
-        <img className="cfs-header" src={"/photos/cfs11.jpeg"} alt="cfs" />
+        {/* <img className="cfs-header" src={"/photos/cfs11.jpeg"} alt="cfs" /> */}
+        <ImageSlider className="cfs-header" slides={SliderData} />
       </div>
       {/* <div className="showPostDiv">
         <ul><ShowPosts /></ul>
