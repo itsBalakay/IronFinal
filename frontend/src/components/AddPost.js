@@ -14,7 +14,8 @@ function AddPost(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let res = await actions.addPost({ post });
+    console.log(post);
+    let res = await actions.addPost(post);
     history.push("/favourites"); //props.history.push is also an option
   };
 
@@ -22,12 +23,12 @@ function AddPost(props) {
     <div>
       <h3>Add Post</h3>
       <form onSubmit={handleSubmit}>
-        <input type="text" onChange={handleChange} placeholder="Club" />
-        <input type="text" onChange={handleChange} placeholder="Year" />
-        <input type="text" onChange={handleChange} placeholder="Player" />
-        <input type="text" onChange={handleChange} placeholder="League" />
-        <input type="text" onChange={handleChange} placeholder="Notes" />
-        <input type="text" onChange={handleChange} placeholder="ImageUrl" />
+        <input type="text" onChange={handleChange} placeholder="club" />
+        <input type="text" onChange={handleChange} placeholder="year" />
+        <input type="text" onChange={handleChange} placeholder="player" />
+        <input type="text" onChange={handleChange} placeholder="league" />
+        <input type="text" onChange={handleChange} placeholder="notes" />
+        <input type="text" onChange={handleChange} placeholder="imageUrl" />
         <button>Add</button>
       </form>
     </div>

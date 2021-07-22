@@ -14,10 +14,16 @@ import Newshirts from "./components/Newshirts";
 import Singleshirt from "./components/Singleshirt";
 import Bundesliga from "./components/Bundesliga";
 import Prem from "./components/Prem";
-import Cart from "./components/Cart";
+import Search from "./components/Search";
+import { useHistory } from "react-router-dom";
 
 function App() {
   let [user, setUser] = useState({});
+  //search bar
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [allShirts, setAllShirts] = useState([]);
+  let history = useHistory();
 
   const getTheUser = async () => {
     let res = await actions.getUser();
@@ -27,6 +33,42 @@ function App() {
   useEffect(() => {
     getTheUser();
   }, []);
+
+  //for search
+  const getShirts = async () => {
+    let res = await actions.shirts();
+    console.log(res);
+    setAllShirts(res.data);
+  };
+  useEffect(() => {
+    console.log(searchResults, searchTerm);
+    let results = allShirts.filter((shirt) => {
+      return Object.values(shirt).join(" ").toLowerCase().includes(searchTerm);
+    });
+    setSearchResults(results);
+  }, [searchTerm]);
+
+  useEffect(async () => {
+    getShirts();
+  }, []);
+
+  //searchbar
+  const handleChange = (e) => {
+    console.log(e);
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("search submitted");
+    history.push("/Search");
+  };
+
+  //searchbar
+  const submitSearch = (e) => {
+    e.preventDefault();
+    //handleOnSubmit();
+  };
 
   return (
     <TheContext.Provider value={{ user, setUser, getTheUser }}>
@@ -38,7 +80,6 @@ function App() {
           <Link to="/NewShirts">New Shirts</Link>
           <Link to="/RetroShirts">Retro Shirts</Link>
           <Link to="/Favourites">Favorites</Link>
-          <Link to="/Mycart">Cart</Link>
 
           {user?.name ? (
             <>
@@ -48,6 +89,17 @@ function App() {
           ) : (
             <Link to="/Auth">Login/Signup</Link>
           )}
+          <div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Search Item..."
+                value={searchTerm}
+                onChange={handleChange}
+              />
+              <button>Search</button>
+            </form>
+          </div>
         </nav>
 
         <Switch>
@@ -92,6 +144,11 @@ function App() {
             exact
             path="/PremierLeague"
             render={(props) => <Prem {...props} />}
+          />
+          <Route
+            exact
+            path="/Search"
+            render={(props) => <Search shirts={searchResults} {...props} />}
           />
         </Switch>
       </div>
