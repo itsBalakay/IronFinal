@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import actions from "../api";
 import { Link } from "react-router-dom";
 import Pagination from "./Pagination";
+import Search from "./Search";
 
 function Bundesliga(props) {
   const [bun, setBun] = useState([]);
@@ -14,9 +15,7 @@ function Bundesliga(props) {
 
   const getShirts = async () => {
     let res = await actions.shirts();
-    // setLoading(true);
     setBun(res.data);
-    // setLoading(false); //added for pagination
   };
 
   useEffect(async () => {
@@ -36,9 +35,6 @@ function Bundesliga(props) {
     setCurrentPage(pageNumber);
   };
   const ShowBun = () => {
-    // if (loading) {
-    //   return <h2>Loading...</h2>;
-    // }
     return currentShirt.map((bunShirt) => {
       return (
         <ul className="shirtList">
@@ -67,11 +63,11 @@ function Bundesliga(props) {
   return (
     <div>
       <h2>Bundesliga</h2>
+      <Search shirts={filterBun} />
       <div className="shirtsPage">
         <ShowBun />
       </div>
       <div>
-        {/* added for pagination */}
         <Pagination
           postPerPage={postPerPage}
           totalPosts={filterBun.length}
