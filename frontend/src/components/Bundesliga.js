@@ -57,6 +57,9 @@ function Bundesliga(props) {
           <li style={{ color: `red`, fontWeight: `bold` }}>
             ${bunShirt.price}
           </li>
+          <li>
+            <button>Add to Cart</button>
+          </li>
         </ul>
       );
     });

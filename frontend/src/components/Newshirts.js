@@ -14,19 +14,26 @@ function NewShirts(props) {
     let filterNew = newShirt.filter((newShirt) => newShirt.year > 2020);
     return filterNew.map((newest) => {
       return (
-        <ul className="shirtList">
-          <li>
-            <img
-              className="shirtImages"
-              src={newest.imageUrl[0]}
-              alt="shirtpic"
-            />
-          </li>
-          <li>{newest.year}</li>
-          <li>{newest.club}</li>
-          <li>{newest.size}</li>
-          <li style={{ color: `red`, fontWeight: `bold` }}>${newest.price}</li>
-        </ul>
+        <>
+          <ul className="shirtList">
+            <li>
+              <img
+                className="shirtImages"
+                src={newest.imageUrl[0]}
+                alt="shirtpic"
+              />
+            </li>
+            <li>{newest.year}</li>
+            <li>{newest.club}</li>
+            <li>{newest.size}</li>
+            <li style={{ color: `red`, fontWeight: `bold` }}>
+              ${newest.price}
+            </li>
+            <li>
+              <button>Add to Cart</button>
+            </li>
+          </ul>
+        </>
       );
     });
   };
