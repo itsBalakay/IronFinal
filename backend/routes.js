@@ -17,6 +17,7 @@ router.get("/get-the-user", authorize, async (req, res) => {
 
 router.post("/add-post", authorize, async (req, res) => {
   let newPost = req.body;
+  console.log(newPost, "pineapple");
   newPost.userId = res.locals.user._id;
   Post.create(newPost).then((post) => {
     res.json(post);
@@ -38,9 +39,9 @@ router.get("/all-the-shirts", (req, res) => {
 });
 
 //Fix Route for single shirt page
-router.get("/one-shirt", (req, res) => {
-  Shirts.findById(_id).then((shirts) => {
-    res.json(shirts);
+router.get("/one-shirt/:shirtId", (req, res) => {
+  Shirts.findById(req.params.shirtId).then((shirt) => {
+    res.json(shirt);
   });
 });
 //fix above route for single shirt page

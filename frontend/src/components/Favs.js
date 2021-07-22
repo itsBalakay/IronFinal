@@ -15,7 +15,7 @@ function Favs(props) {
   const ShowPosts = () =>
     allPosts.map((eachPost) => (
       <li key={eachPost._id}>
-        {eachPost.post} <i>created by ...{eachPost.userId?.name}</i>
+        {eachPost.club} <i>created by ...{eachPost.userId?.name}</i>
       </li>
     ));
 

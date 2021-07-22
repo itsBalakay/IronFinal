@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import actions from "../api";
 
-function Singleshirt({ _id }) {
-  const [singleShirt, setSingleShirt] = useState([]);
+function Singleshirt(props) {
+  const [singleShirt, setSingleShirt] = useState();
 
   useEffect(async () => {
     console.log("is useEffect working?");
-    let res = await actions.oneShirt;
+    let res = await actions.oneShirt(props.match.params.shirtId);
     console.log(res.data);
     setSingleShirt(res.data);
   }, []);
@@ -14,7 +14,7 @@ function Singleshirt({ _id }) {
   return (
     <div className="singlePage">
       <div>
-        {/* <img src={singleShirt.imageUrl[0]} alt="single shirt pic" /> */}
+        <img src={singleShirt?.imageUrl[0]} alt="single shirt pic" />
         Hello
         {/* {singleShirt.club} */}
       </div>

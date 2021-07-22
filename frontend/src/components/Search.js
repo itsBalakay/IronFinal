@@ -5,59 +5,65 @@ function Search({ shirts }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
-  const handleChange = (e) => {
-    console.log(e);
-    setSearchTerm(e.target.value);
-  };
+  // const handleChange = (e) => {
+  //   console.log(e);
+  //   setSearchTerm(e.target.value);
+  // };
 
-  const submitSearch = (e) => {
-    e.preventDefault();
-    //handleOnSubmit();
-  };
+  // const submitSearch = (e) => {
+  //   e.preventDefault();
+  //   //handleOnSubmit();
+  // };
 
-  useEffect(() => {
-    let results = shirts.filter((shirt) => {
-      return shirt.toString().toLowerCase().includes(searchTerm);
-    });
-    setSearchResults(results);
-  }, [searchTerm]);
+  // useEffect(() => {
+  //   console.log(shirts, searchTerm);
+  //   let results = shirts.filter((shirt) => {
+  //     return Object.values(shirt).join(" ").toLowerCase().includes(searchTerm);
+  //   });
+  //   setSearchResults(results);
+  // }, [searchTerm]);
 
   const ShowSearch = () => {
-    return searchResults.map((item) => {
+    return shirts.map((item) => {
       return (
-        <ul>
-          <li>
-            <Link to={`/Shirts/${item._id}`}>
-              <li>
+        <>
+          <ul className="shirtList">
+            <li>
+              <Link to={`/Shirts/${item._id}`}>
                 <img
                   className="shirtImages"
                   src={item.imageUrl[0]}
                   alt="shirtpic"
                 />
-              </li>
-            </Link>
+              </Link>
+            </li>
             <li>{item.year}</li>
             <li>{item.club}</li>
             <li>{item.size}</li>
             <li style={{ color: `red`, fontWeight: `bold` }}>${item.price}</li>
-          </li>
-        </ul>
+            <li>
+              <Link to="/Mycart">
+                <button>Add to Cart</button>
+              </Link>
+            </li>
+          </ul>
+        </>
       );
     });
   };
 
   return (
     <div className="search">
-      <div>
+      {/* <div>
         <input
           type="text"
           placeholder="Search Item..."
           value={searchTerm}
           onChange={handleChange}
         />
-      </div>
+      </div> */}
 
-      <div>
+      <div className="shirtsPage">
         <ShowSearch />
       </div>
     </div>

@@ -63,7 +63,7 @@ function Bundesliga(props) {
   return (
     <div>
       <h2>Bundesliga</h2>
-      <Search shirts={filterBun} />
+      {/* <Search shirts={filterBun} /> */}
       <div className="shirtsPage">
         <ShowBun />
       </div>
