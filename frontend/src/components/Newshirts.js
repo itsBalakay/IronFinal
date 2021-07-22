@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import actions from "../api";
 import Pagination from "./Pagination";
+import { Link } from "react-router-dom";
 
 function NewShirts(props) {
   const [newShirt, setNewShirt] = useState([]);
@@ -46,7 +47,9 @@ function NewShirts(props) {
               ${newest.price}
             </li>
             <li>
-              <button>Add to Cart</button>
+              <Link to="/Mycart">
+                <button>Add to Cart</button>
+              </Link>
             </li>
           </ul>
         </>

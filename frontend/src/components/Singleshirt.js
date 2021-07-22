@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import actions from "../api";
 
-function Singleshirt(props) {
-  const [singleShirt, setSingleShirt] = useState({});
+function Singleshirt({ _id }) {
+  const [singleShirt, setSingleShirt] = useState([]);
 
   useEffect(async () => {
     console.log("is useEffect working?");
