@@ -51,6 +51,26 @@ function Home(props) {
           </Link>
         </div>
       </div>
+
+      <div className="bottomHome-2">
+        <div className="halfHome-3">
+          <Link to="/LaLiga" style={{ textDecoration: `none`, color: `white` }}>
+            <h1>La Liga</h1>
+          </Link>
+        </div>
+        <div className="halfHome-4">
+          <Link
+            to="/SerieA"
+            style={{
+              textDecoration: `none`,
+              backgroundColor: `white`,
+              color: `black`,
+            }}
+          >
+            <h1>Serie A</h1>
+          </Link>
+        </div>
+      </div>
       <YoutubeEmbed embedId="KlbRiCYE-OQ" />
     </>
   );
