@@ -28,11 +28,8 @@ const actions = {
   },
 
   //maybe fix
-  oneShirt: async (props) => {
-    return await axios.get(
-      `${serverUrl}/one-shirt/${props.match.params._id}`,
-      createHeaders
-    );
+  oneShirt: async () => {
+    return await axios.get(`${serverUrl}/one-shirt/:shirtId`, createHeaders);
   },
 
   authenticate: async (profileObj) => {
