@@ -182,7 +182,7 @@ function App() {
       <Footer />
       <FeedBack
         style={{ zIndex: "1", position: "fixed", left: "2px!" }}
-        position="left"
+        position="right"
         numberOfStars={5}
         headerText="Have Feedback? 📝"
         bodyText="Need help? Type your fedback below and we'll fix it 🙂"
