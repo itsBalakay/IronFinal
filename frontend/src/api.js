@@ -20,6 +20,15 @@ const actions = {
     let res = await axios.post(`${serverUrl}/add-post`, post, createHeaders());
     return res;
   },
+  addFeedback: async (feedback) => {
+    console.log(feedback);
+    let res = await axios.feedback(
+      `${serverUrl}/add-feedback`,
+      feedback,
+      createHeaders()
+    );
+    return res;
+  },
   getAllPosts: async (post) => {
     return await axios.get(`${serverUrl}/all-the-posts`, createHeaders());
   },
