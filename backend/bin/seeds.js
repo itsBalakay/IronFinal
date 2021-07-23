@@ -1546,6 +1546,198 @@ const shirts = [
       "https://store.liverpoolfc.com/media/catalog/product/cache/dd504f005c0b90ffe1b9fb2344db1a87/d/b/db2560r_a.jpg",
     ],
   },
+  {
+    club: "Olympique Lyon",
+    year: 2021,
+    player: null,
+    league: "Ligue 1",
+    size: "M",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "The Groupama Stadium isn't the only place in Lyon where creativity flourishes. This adidas Olympique Lyonnais Away Jersey takes its artistic inspiration from the camo-style graffiti plastered on buildings and walls around the city. Built to keep players and fans comfortable, it has soft fabric and moisture-absorbing AEROREADY. The woven badge flashes the perfect football finish.",
+    imageUrl: [
+      "https://cdn1.uksoccershop.com/images/cache/re_1624877954_lyon-away-shirt-red-475x0.webp",
+      "https://cdn1.uksoccershop.com/images/cache/adtnl_prodts_img/re_1624877954_lyon-away-shirt-red-back-475x0.jpg",
+    ],
+  },
+  {
+    club: "Tottenham",
+    year: 2021,
+    player: null,
+    league: "Premier League",
+    size: "M",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "Exceptional fit, ground-breaking fabric technology, and plenty of club pride make this adult Tottenham Hotspur away shirt 2021/22 a stand-out piece of kit for any fan. A replica of the kit worn by the professionals, the striking black colourway sets it apart from other seasons designs. The use of Nikes innovative Dri-FIT and Nike Breathe fabric ensures sweat and moisture is moved away from the skin for a cooler, fresher feel. The standard-fit provides a relaxed, easy feel, and the use of 100% recycled polyester is both easy to care for with a machine wash, and kinder to the planet, too.",
+    imageUrl: [
+      "https://cdn1.uksoccershop.com/images/cache/re_1627028460_tottenham-away-shirt-21-22-475x0.webp",
+      "https://cdn1.uksoccershop.com/images/cache/adtnl_prodts_img/re_1627028460_tottenham-away-shirt-21-22-back-475x0.jpg",
+    ],
+  },
+  {
+    club: "Dortmund",
+    year: 2021,
+    player: null,
+    league: "Bundesliga",
+    size: "L",
+    condition: 10,
+    price: 99.99,
+    notes: "BVB away shirt for the 21/22 season",
+    imageUrl: [
+      "https://cdn1.uksoccershop.com/images/cache/re_1627030632_bvb-away-shirt-21-22-for-kids-475x0.webp",
+      "https://cdn1.uksoccershop.com/images/cache/adtnl_prodts_img/re_1627030632_bvb-away-shirt-21-22-for-kids-bacck-475x0.jpg",
+    ],
+  },
+  {
+    club: "Juventus",
+    year: 2021,
+    player: null,
+    league: "Serie A",
+    size: "M",
+    condition: 10,
+    price: 99.99,
+    notes: "Juventus away shirt for the 21/22 season",
+    imageUrl: [
+      "https://cdn1.uksoccershop.com/images/cache/re_1627031829_juventus-away-jersey-2021-22-475x0.webp",
+      "https://cdn1.uksoccershop.com/images/cache/adtnl_prodts_img/re_1627031829_juventus-away-jersey-2021-22-back-475x0.jpg",
+    ],
+  },
+  {
+    club: "Inter Milan",
+    year: 2021,
+    player: null,
+    league: "Serie A",
+    size: "M",
+    condition: 10,
+    price: 99.99,
+    notes: "Inter Milan away shirt for the 21/22 season",
+    imageUrl: [
+      "https://cdn1.uksoccershop.com/images/cache/re_1626183322_inter-home-stadium-jersey-2021-22-475x0.webp",
+      "https://cdn1.uksoccershop.com/images/cache/adtnl_prodts_img/re_1626183322_inter-home-stadium-jersey-2021-22-back-475x0.jpg",
+    ],
+  },
+  {
+    club: "Arsenal",
+    year: 2021,
+    player: null,
+    league: "Premier League",
+    size: "L",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "From sealing the double in 1971 to delivering that final blow in 1989. Some of Arsenal's greatest soccer memories are highlighted in yellow. adidas brought that classic color back for this juniors' away jersey, adding a woven cannon for a further shot of vintage Gunners style. Made to keep fans comfortable, it combines soft fabric and moisture-wicking AEROREADY.",
+    imageUrl: [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/b30ac0c8a7da42a6ae0dace100aaa9d8_9366/Arsenal_21-22_Away_Jersey_Yellow_GQ3253_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/0184a32d73e34571ab9eace100aaafe7_9366/Arsenal_21-22_Away_Jersey_Yellow_GQ3253_02_laydown_hover.jpg",
+    ],
+  },
+  {
+    club: "Bayern Munich",
+    year: 2021,
+    player: null,
+    league: "Bundesliga",
+    size: "L",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "An away jersey doesn't only represent a club, it reflects the place they call home. This adidas FC Bayern soccer jersey is inspired by the Munich Child, a symbol of the city. The lightweight fabric has heat-transfer details and a small coat of arms on the back neck. It's built for performance with HEAT.RDY that maximizes airflow, so you feel cool.",
+    imageUrl: [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/7cc4d4fc442140208e89acfc01364f17_9366/FC_Bayern_21-22_Away_Authentic_Jersey_Black_GM5312_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/5dabddd30a2047849cd9ad2d001187ec_9366/FC_Bayern_21-22_Away_Authentic_Jersey_Black_GM5312_02_laydown.jpg",
+    ],
+  },
+  {
+    club: "Real Madrid",
+    year: 2021,
+    player: null,
+    league: "La Liga",
+    size: "M",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "They win on the pitch. But the Plaza de Cibeles is where they celebrate with their soccer family. The concentric circles and spiral pattern of the fountain in Madrid's famous square inspired this adidas Real Madrid jersey's design. Made for fans, this shirt will keep you comfortable with soft fabric and moisture-absorbing AEROREADY.",
+    imageUrl: [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/a4ebccafc3c6487ca477acda00f25d5f_9366/Real_Madrid_21-22_Home_Jersey_White_GQ1359_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/7595b6211bd94e0f8b61ad2d01134efa_9366/Real_Madrid_21-22_Home_Jersey_White_GQ1359_02_laydown.jpg",
+    ],
+  },
+  {
+    club: "Barcelona",
+    year: 2021,
+    player: null,
+    league: "La Liga",
+    size: "M",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "Barcelona – as they do – go where no club has gone before. The “purple pulse” color palette plays host to an iridescent club and Nike crest on the chest. Yes, a shiny, reflective badge application on a professional soccer kit. Nike didn’t hold back. The jersey is meant to be a kit for everyone, one driving unity and togetherness, because, after all – tots units fem forca.",
+    imageUrl: [
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1055663000&iset=0108&iindex=0007",
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1055663000&iset=0108&iindex=0009",
+    ],
+  },
+  {
+    club: "Machester City",
+    year: 2021,
+    player: null,
+    league: "Premier League",
+    size: "M",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "Maybe it’s the moment that made you a fan. Maybe it’s the sporting moment that you’ll truly never forget, that you’ll tell your children about some day. Either way, the 21/22 Manchester City home jersey is a must have for any city fan – representing the moment that City transcended in more ways than one. First, on the inside neck you’ll find “93:20” the exact moment Sergio Aguero’s strike hit the back of the net. Layered over the 20 in that back neck signoff is an off-colored ’10,’ representative of Aguero’s shirt number at the time. Finally, an all-over graphic pattern is constructed of scoreboard style bars and shapes, remembering forever the moment we all shouted Aguerooooooooooooooooo",
+    imageUrl: [
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1053362000&iset=0108&iindex=0007",
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1053362000&iset=0108&iindex=0009",
+    ],
+  },
+  {
+    club: "Ajax",
+    year: 2021,
+    player: null,
+    league: "Eredivisie",
+    size: "S",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "adidas and Ajax partner up to remember some historic Ajax sides of the past – a thinner, dark red center stripe is present here on the new home shirt, reminiscent of the great sides of 70s, while the big call out on the Amsterdam club’s new jersey is the crest. On the thirty year anniversary of its update, the retro Ajax crest returns to center stage, not relegated to the away or third, but on full display on the club’s main kit. Remembered in history, honored in the present.",
+    imageUrl: [
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1052963000&iset=0108&iindex=0007",
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1052963000&iset=0108&iindex=0009",
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1052963000&iset=0108&iindex=0040",
+    ],
+  },
+  {
+    club: "Atletico Madrid",
+    year: 2021,
+    player: null,
+    league: "La Liga",
+    size: "L",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "You can never ditch the Atleti stripes. Nike would never – here, on the new 21/22 home top, they’ve played with the execution, using a tattered, distressed look to add a touch of vibrancy and panache to a kit we’re all so accustomed to. You can’t change a classic – but you can add just enough style and flair to make it fresh.",
+    imageUrl: [
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1051756000&iset=0108&iindex=0007",
+    ],
+  },
+  {
+    club: "Marseille",
+    year: 2021,
+    player: null,
+    league: "Ligue 1",
+    size: "S",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "A gorgeous dark color combo and a stunner of a design make this a top tier away jersey for Marseille ahead of the 21/22 season, with chevron designs forming an “M” pattern across the kit. You know what the “M” stands for, don’t you? March with the Marseille army in the latest from PUMA.",
+    imageUrl: [
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1053364000&iset=0108&iindex=0007",
+      "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1053364000&iset=0108&iindex=0009",
+    ],
+  },
 ];
 
 module.exports = shirts;
