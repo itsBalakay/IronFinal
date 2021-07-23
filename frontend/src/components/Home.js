@@ -71,7 +71,8 @@ function Home(props) {
           </Link>
         </div>
       </div>
-      <YoutubeEmbed embedId="KlbRiCYE-OQ" />
+      <YoutubeEmbed />
+      {/* embedId="KlbRiCYE-OQ" */}
     </>
   );
 }

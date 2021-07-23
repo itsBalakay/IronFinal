@@ -19,6 +19,8 @@ import Prem from "./components/Prem";
 import Search from "./components/Search";
 import { useHistory } from "react-router-dom";
 import Cart from "./components/Cart";
+import Footer from "./components/Footer/Footer";
+import FeedBack from "./components/Feedback/Feedback";
 
 function App() {
   let [user, setUser] = useState({});
@@ -65,6 +67,7 @@ function App() {
     e.preventDefault();
     console.log("search submitted");
     history.push("/Search");
+    setSearchTerm("");
   };
 
   //searchbar
@@ -77,7 +80,14 @@ function App() {
     <TheContext.Provider value={{ user, setUser, getTheUser }}>
       <div className="App">
         <h1>Retro Football Shirts</h1>
-        <i>{user?.name}</i>
+        {user?.name ? (
+          <div>
+            <i>Welcome back, {user?.name}</i>
+          </div>
+        ) : (
+          <i></i>
+        )}
+
         <nav className="navBar">
           <Link to="/">Home</Link>
           <Link to="/NewShirts">New Shirts</Link>
@@ -92,6 +102,9 @@ function App() {
           ) : (
             <Link to="/Auth">Login/Signup</Link>
           )}
+
+          <Link to="/Mycart">Cart</Link>
+
           <div>
             <form onSubmit={handleSubmit}>
               <input
@@ -166,6 +179,44 @@ function App() {
           />
         </Switch>
       </div>
+      <Footer />
+      <FeedBack
+        style={{ zIndex: "1", position: "fixed", left: "2px!" }}
+        position="left"
+        numberOfStars={5}
+        headerText="Have Feedback? 📝"
+        bodyText="Need help? Type your fedback below and we'll fix it 🙂"
+        buttonText="Feedback"
+        handleClose={() => console.log("handleclose")}
+        handleSubmit={(data) =>
+          fetch("https://formspree.io/xxxxxxx", {
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            method: "POST", // or 'PUT'
+            body: JSON.stringify(data),
+          })
+            .then((response) => {
+              if (!response.ok) {
+                return Promise.reject(
+                  "Our servers are having issues! We couldn't send your feedback!"
+                );
+              }
+              response.json();
+            })
+            .then(() => {
+              alert("Success!");
+            })
+            .catch((error) => {
+              alert(
+                "Our servers are having issues! We couldn't send your feedback!",
+                error
+              );
+            })
+        }
+        handleButtonClick={() => console.log("handleButtonClick")}
+      />
     </TheContext.Provider>
   );
 }

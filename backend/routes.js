@@ -24,6 +24,15 @@ router.post("/add-post", authorize, async (req, res) => {
   });
 });
 
+router.post("/add-feedback", authorize, async (req, res) => {
+  let newFeedback = req.body;
+  console.log(newFeedback, "pineapple");
+  // newFeedback.userId = res.locals.user._id;
+  Feedback.create(newFeedback).then((feedback) => {
+    res.json(feedback);
+  });
+});
+
 router.get("/all-the-posts", (req, res) => {
   Post.find()
     .populate("userId")
