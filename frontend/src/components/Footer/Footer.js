@@ -48,16 +48,51 @@ function Footer() {
             <ui className="list-unstyled">
               <li>Facebook</li>
               <li>Instagram</li>
-              <li>Twitter</li>
-              <li>LinkedIn</li>
+              <li>
+                <a
+                  style={{ color: `white`, textDecoration: `none` }}
+                  href="https://twitter.com/PritomNYC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  style={{ color: `white`, textDecoration: `none` }}
+                  href="https://www.youtube.com/channel/UCpcTrCXblq78GZrTUTLWeBw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Youtube
+                </a>
+              </li>
             </ui>
           </div>
         </div>
         <hr />
         <div className="row">
           <p className="col-sm">
-            &copy;{new Date().getFullYear()} RETRO JERSEY | All rights reserved
-            | Terms Of Service | Privacy
+            USA &copy;{new Date().getFullYear()} RETRO SHIRT | All rights
+            reserved |
+            <a
+              style={{ color: `white`, textDecoration: `none` }}
+              href="https://www.adidas.com/us/help/us-company-information/what-are-the-terms-and-conditions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Terms Of Service
+            </a>{" "}
+            |{" "}
+            <a
+              style={{ color: `white`, textDecoration: `none` }}
+              href="https://www.adidas.com/us/help/us-company-information/what-is-the-privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy
+            </a>
           </p>
         </div>
       </div>
