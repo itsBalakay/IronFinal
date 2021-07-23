@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import { useEffect, useState } from "react";
 import actions from "./api";
 import "./App.css";
-import { Switch, Link, Route, NavLink } from "react-router-dom";
+import { Switch, Link, Route } from "react-router-dom";
 import TheContext from "./TheContext";
 import Home from "./components/Home";
 import Auth from "./components/Auth";
