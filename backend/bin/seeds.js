@@ -1738,6 +1738,279 @@ const shirts = [
       "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1053364000&iset=0108&iindex=0009",
     ],
   },
+  {
+    club: "Arsenal",
+    year: 2004,
+    player: "Henry",
+    league: "Premier League",
+    size: "L",
+    condition: 8,
+    price: 149.99,
+    notes:
+      "Home shirt as worn by the legendary striker when the Gunners lifted the FA Cup and Henry retained his European Golden Boot title, this time sharing it with Diego Forlan as both scored 31 league goals",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-04-home-henry_1_2_1_1_1_1_2_1_1_2_1_1_1_1_1_1_1_2_2_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-04-home_3_12_1_1_2_2_1_1_1_1_1_1_1_1_2_2_1.jpg",
+    ],
+  },
+  {
+    club: "Arsenal",
+    year: 1992,
+    player: null,
+    league: "Premier League",
+    size: "S",
+    condition: 6,
+    price: 349.99,
+    notes:
+      "Famous 'bruised banana' design away kit worn from 1991 to 1993. This shirt has become one of Adidas's most iconic templates and has gone on to inspire art, fashion and numerous 'copycat' kits. George Graham's side failed to win a trophy during the shirts debut season, falling out the F.A and League Cup at the third round stage and finishing 4th in the First Division. The second season brought more success as The Gooners won both domestic cup competitions, however they slumped to a 10th place finish in the Premier Leagues foundation season. The design was also memorably worn when Ian Wright scored a hat-trick on his league debut away to Southampton. This was the last Adidas shirt to sport the 'trefoil' logo in English football",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-91-away-hof_2.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-91-away-back-hof_2.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-91-away-hof2_2.jpg",
+    ],
+  },
+  {
+    club: "Arsenal",
+    year: 2002,
+    player: "Pires",
+    league: "Premier League",
+    size: "L",
+    condition: 8,
+    price: 229.99,
+    notes:
+      "Away shirt as worn by Pirès during the campaign Arsenal became the first team in over a century to perform a 'perfect' unbeaten season, being dubbed 'The Invincibles'. The skilful winger developed a formidable partnership with Thierry Henry and contributed 14 Premiership goals in 2003/04 as the Gunners made history",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-02-away-ls-pires-pslex_2_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-02-away-ls_3_1_1_1_2_1_1_1.jpg",
+    ],
+  },
+  {
+    club: "Arsenal",
+    year: 1994,
+    player: "Winterburn",
+    league: "Premier League",
+    size: "L",
+    condition: 8,
+    price: 229.99,
+    notes:
+      "Extremely rare player shirt believed to have been issued to Winterburn in the 1994-95 season. The left-back moved to Highbury in '87 from Wimbledon and went on to become a fixture of the famed back four for 13 years. In this campaign the full back made the most appearances in a single season in his Arsenal career, playing 57 times as the side reached the Cup Winners Cup Final but finished down in 12th place in the league. He stayed with the side until 2000 when after winning 3 top flight titles and two FA Cups he joined West Ham as a lengthy career winded down. This shirt is a replica specification shirt and is thought that the kitroom ran out of player shirts and were forced to customise replica versions in some instances.",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-94-away-mw-winterburn-back_1_1_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-94-away-mw-winterburn-front_1_1_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-94-away-mw-winterburn-close_1_1_1.jpg",
+    ],
+  },
+  {
+    club: "Arsenal",
+    year: 2019,
+    player: "Tierney",
+    league: "Premier League",
+    size: "S",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Away shirt as worn when the Gunners failed to impose their will on the Premier League, sacking manager Unai Emery in November after a string of poor results and ultimately finishing in a lowly 8th position. Hotly-tipped former Arsenal man Mikel Arteta was his replacement, he brought some joy and optimism back to the Emirates with a record 14th FA Cup win. This design was inspired by the famous 'bruised banana' away shirt from 1991/93 seasons",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-19-away-tierney.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-19-away-tags_2.jpg",
+    ],
+  },
+  {
+    club: "Arsenal",
+    year: 2019,
+    player: "Martinelli",
+    league: "Premier League",
+    size: "S",
+    condition: 10,
+    price: 79.99,
+    notes:
+      "Away shirt as worn when the Gunners failed to impose their will on the Premier League, sacking manager Unai Emery in November after a string of poor results and ultimately finishing in a lowly 8th position. Hotly-tipped former Arsenal man Mikel Arteta was his replacement, he brought some joy and optimism back to the Emirates with a record 14th FA Cup win. This design was inspired by the famous 'bruised banana' away shirt from 1991/93 seasons",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-19-away-martinelli.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/r/arsenal-19-away-tags_2_1_1_1.jpg",
+    ],
+  },
+  {
+    club: "Valencia",
+    year: 2010,
+    player: "Soldado",
+    league: "La Liga",
+    size: "L",
+    condition: 8,
+    price: 79.99,
+    notes:
+      "Home shirt as worn in the season when the side finished 3rd place in La Liga and reached the Champions League last 16",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/700x/0dc2d03fe217f8c83829496872af24a0/v/a/valencia-10-home-ls-mw-tags-soldado_5.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/v/a/valencia-10-home-pi-ls-nolfp_2.jpg",
+    ],
+  },
+  {
+    club: "Valencia",
+    year: 2010,
+    player: "Topal",
+    league: "La Liga",
+    size: "S",
+    condition: 8,
+    price: 59.99,
+    notes:
+      "Third shirt as worn when Los Che finished 3rd in La Liga under talented coach Unai Emery. The side reached the round of 16 in both the Champions League and Copa del Rey. Topal featured 29 times for the side this campaign in his first year of a two year spell",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/c/r/crail13_12_11_2020_lb0515.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/c/r/crail13_12_11_2020_lb0513.jpg",
+    ],
+  },
+  {
+    club: "Valencia",
+    year: 2002,
+    player: "Torres",
+    league: "La Liga",
+    size: "L",
+    condition: 10,
+    price: 139.99,
+    notes:
+      "Very rare player shirt believed to have been issued to Torres in the 2002-03 season as Lose Che reached the Champions League Quarter Finals and came 5th place in La Liga",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/v/a/valencia-02-home-pi-ls-torres-23.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/v/a/valencia-02-home-pi-ls-tags_5.jpg",
+    ],
+  },
+  {
+    club: "Atalanta",
+    year: 2020,
+    player: null,
+    league: "Serie A",
+    size: "L",
+    condition: 10,
+    price: 59.99,
+    notes:
+      "Sponsorless home shirt as worn when La Dea hoped to build on the remarkable season they'd enjoyed a year earlier, reprising their hyper-aggressive blitzing style in the hopes of bringing home their first ever Serie A title. Colombian marksmen Luis Muriel and Duván Zapata once again began the campaign in fine form, each reaching double-digit goalscoring tallies by the turn of the year, as the side replicated their exact points tally and position from the prior season with a third place finish",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/t/atalanta-20-home-ns-tags_5.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/t/atalanta-20-home-ns-back_5.jpg",
+    ],
+  },
+  {
+    club: "Atalanta",
+    year: 2000,
+    player: null,
+    league: "Serie A",
+    size: "M",
+    condition: 7,
+    price: 119.99,
+    notes:
+      "Classic design goalkeeper shirt as worn when Giovanni Vavassori guided the side to an impressive 7th place finish. Ivan Pelizzoli was the main 'keeper this season appearing in 37 games",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/t/atalanta-00-gk-shirt_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/t/atalanta-00-gk-shirt-closeup_1.jpg",
+    ],
+  },
+  {
+    club: "Atalanta",
+    year: 2000,
+    player: null,
+    league: "Serie A",
+    size: "M",
+    condition: 8,
+    price: 119.99,
+    notes:
+      "Classic design goalkeeper shirt as worn when Giovanni Vavassori guided the side to an impressive 7th place finish. Ivan Pelizzoli was the main 'keeper this season appearing in 37 games",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/t/atalanta-00-gk-shirt_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/t/atalanta-00-gk-shirt-closeup_1.jpg",
+    ],
+  },
+  {
+    club: "Atalanta",
+    year: 1998,
+    player: "Cossato",
+    league: "Serie A",
+    size: "XL",
+    condition: 7,
+    price: 129.99,
+    notes:
+      "Rare home shirt as worn when the side pushed for promotion to Serie A but had to settle for 6th place, also reaching the Coppa Italia Quarter Finals. Cossato featured 24 times for the side but could only find the net on two occasions",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/c/r/crail13_12_11_2020_lb0407.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/c/r/crail13_12_11_2020_lb0405.jpg",
+    ],
+  },
+  {
+    club: "Atalanta",
+    year: 1999,
+    player: "Rossini",
+    league: "Serie A",
+    size: "L",
+    condition: 7,
+    price: 129.99,
+    notes:
+      "Rare player shirt believed to have been issued to or worn by Rossini for the 1999-00 season as La Dea won promotion to Serie A with a 2nd place finish with Rossini scoring 3 in 25 games including the opener with a well-directed header in a 4-0 thrashing of Fermana",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/t/atalanta-99-home-mw-ls-rossini-reverse.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/a/t/atalanta-99-home-mw-ls-rossini-front.jpg",
+    ],
+  },
+  {
+    club: "Lazio",
+    year: 2020,
+    player: "Immobile",
+    league: "Serie A",
+    size: "M",
+    condition: 10,
+    price: 99.99,
+    notes:
+      "Special Champions League home shirt released for use in European competition, where Le Aquile performed well in a difficult group stage before running into reigning champions Bayern Munich in the first knockout round, losing out 6-2 on aggregate to the Bayern buzzsaw. Domestically, the Blue and Whites pushed for Champions League contention without ever really threatening a title run. This design is reminiscent of the 120 Year Anniversary classic released earlier in the year, although this time featuring a gold trim, and comes in a stylish box",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/l/a/lazio-20-home-cl-immobile.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/l/a/lazio-20-home-cl-tags_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/thumbnail/700x700/0dc2d03fe217f8c83829496872af24a0/l/a/lazio-20-home-cl-patches-box-top_2_1.jpg",
+    ],
+  },
+  {
+    club: "Lazio",
+    year: 2001,
+    player: "Stam",
+    league: "Serie A",
+    size: "L",
+    condition: 8,
+    price: 199.99,
+    notes:
+      "Rare shirt only worn in the Champions League during the 2001-02 campaign when the side surprisingly finished bottom of Group D after defeats to Galatasaray, Nantes & PSV. Stam joined Lazio early in the 01-02 season but missed 4 months of action due to testing positive for the steroid nandrolone along with Pep Guardiola of Brescia, after his return, Stam went on to make 70 appearances for Lazio before joining AC Milan in 2004.",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/750x/0dc2d03fe217f8c83829496872af24a0/l/a/lazio-01-euro-home-stam-use_2_1.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/thumbnail/700x700/0dc2d03fe217f8c83829496872af24a0/l/a/lazio-01-euro-home-use_1_1_1_2_1.jpg",
+    ],
+  },
+  {
+    club: "Sampdoria",
+    year: 2006,
+    player: "Ziegler",
+    league: "Serie A",
+    size: "L",
+    condition: 8,
+    price: 199.99,
+    notes:
+      "Very rare player shirt believed to have been issued to Ziegler during the 2006-07 season. The Swiss international joined Samp on loan from Premier League outfit Tottenham in January this season and made 16 appearances as the Blucerchiati finished 9th in Serie A. The highlight of the season for the former Grasshoppers man was undoubtedly his goal in the 3-1 win over Messina in April. He opted to make the move permanent at the end of the campaign and spent another 4 seasons in Genoa before joining Turkish outfit Juventus in 2011.",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/a/sampdoria-05-away-mw-ls-zeigler-back.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/a/sampdoria-05-away-mw-ls-zeigler-front.jpg",
+    ],
+  },
+  {
+    club: "Sampdoria",
+    year: 2001,
+    player: "Bonomi",
+    league: "Serie A",
+    size: "M",
+    condition: 7,
+    price: 199.99,
+    notes:
+      "Ultra rare player shirt believed to have been issued to or worn by Bonomi during the 2001-02 season. The midfielder joined the Blucerchiati from Lecce in 2000 but had struggled for game time in his first season at the Luigi Ferraris being loaned out to Pescara. He made 13 appearances in all competitions this season as the side continued to struggle for promotion from Serie B eventually finishing 11th overall. The former Torino and Empoli man was loaned out once more in January to Catania and would leave permanently at the end of the season to join Fiorentina who had been relegated to Serie C.",
+    imageUrl: [
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/a/sampdoria-01-home-mw-bonomi-back.jpg",
+      "https://dnre29p915wg3.cloudfront.net/media/catalog/product/cache/1/image/1500x/0dc2d03fe217f8c83829496872af24a0/s/a/sampdoria-01-home-mw-bonomi-front.jpg",
+    ],
+  },
 ];
 
 module.exports = shirts;

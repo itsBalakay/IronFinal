@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import { useEffect, useState } from "react";
 import actions from "./api";
 import "./App.css";
-import { Switch, Link, Route } from "react-router-dom";
+import { Switch, Link, Route, NavLink } from "react-router-dom";
 import TheContext from "./TheContext";
 import Home from "./components/Home";
 import Auth from "./components/Auth";
@@ -79,7 +79,23 @@ function App() {
   return (
     <TheContext.Provider value={{ user, setUser, getTheUser }}>
       <div className="App">
-        <h1>Retro Football Shirts</h1>
+        <h1>
+          <span>
+            <img
+              style={{ width: "4%" }}
+              src={`/photos/noun_football jersey_1703987.svg`}
+              alt="shirtlogo"
+            />
+          </span>
+          Retro Football Shirts
+          <span>
+            <img
+              style={{ width: "4%" }}
+              src={`/photos/noun_football jersey_1703987.svg`}
+              alt="shirtlogo"
+            />
+          </span>
+        </h1>
         {user?.name ? (
           <div>
             <i>Welcome back, {user?.name}</i>
