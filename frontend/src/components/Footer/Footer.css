@@ -4,5 +4,15 @@
   padding-top: 3em;
   position: relative;
   bottom: 0;
+  height: 255px;
   width: 100%;
 }
+
+/* .page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 10rem;
+} */
