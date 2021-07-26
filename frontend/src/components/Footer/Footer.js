@@ -13,7 +13,7 @@ function Footer() {
               <li>Story</li>
               <li>
                 <a
-                  style={{ color: `white`, textDecoration: `none` }}
+                  style={{ color: `white` }}
                   href="https://www.linkedin.com/in/blakestillwell/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -50,7 +50,7 @@ function Footer() {
               <li>Instagram</li>
               <li>
                 <a
-                  style={{ color: `white`, textDecoration: `none` }}
+                  style={{ color: `white` }}
                   href="https://twitter.com/PritomNYC"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -60,7 +60,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  style={{ color: `white`, textDecoration: `none` }}
+                  style={{ color: `white` }}
                   href="https://www.youtube.com/channel/UCpcTrCXblq78GZrTUTLWeBw"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -77,7 +77,7 @@ function Footer() {
             🇺🇸 USA &copy;{new Date().getFullYear()} RETRO SHIRT | All rights
             reserved |
             <a
-              style={{ color: `white`, textDecoration: `none` }}
+              style={{ color: `white` }}
               href="https://www.adidas.com/us/help/us-company-information/what-are-the-terms-and-conditions"
               target="_blank"
               rel="noopener noreferrer"
@@ -86,7 +86,7 @@ function Footer() {
             </a>{" "}
             |{" "}
             <a
-              style={{ color: `white`, textDecoration: `none` }}
+              style={{ color: `white` }}
               href="https://www.adidas.com/us/help/us-company-information/what-is-the-privacy-policy"
               target="_blank"
               rel="noopener noreferrer"

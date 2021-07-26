@@ -22,7 +22,7 @@ code {
   display: flex;
   justify-content: space-around;
   background-color: lightgrey;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* .cfs-header {

@@ -107,7 +107,17 @@ function App() {
         <nav className="navBar">
           <Link to="/">Home</Link>
           <Link to="/NewShirts">New Shirts</Link>
-          <Link to="/RetroShirts">Retro Shirts</Link>
+          <div className="dropdown">
+            <Link class="dropbtn" to="/RetroShirts">
+              Retro Shirts
+            </Link>
+            {/* <div class="dropdown-content">
+              <Link to="/Bundesliga">Bundesliga</Link>
+              <Link to="/PremierLeague">Premier League</Link>
+              <Link to="/LaLiga">La Liga</Link>
+              <Link to="/SerieA">SerieA</Link>
+            </div> */}
+          </div>
           <Link to="/Favourites">Favorites</Link>
 
           {user?.name ? (
