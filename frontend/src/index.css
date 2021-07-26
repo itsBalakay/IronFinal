@@ -259,10 +259,14 @@ code {
   position: absolute;
 }
 
+.singleShirtFlex{
+  display:flex;
+  flex-direction: column;
+}
 /* CSS for home latest arrivals */
-
 .shirtsLatest {
   display: flex;
   justify-content: space-evenly;
   margin: 20px 30px 50px 30px;
 }
+/* single shirt page CSS */
