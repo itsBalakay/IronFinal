@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -37,9 +38,9 @@ function Footer() {
           <div className="col">
             <h4>Contact Us</h4>
             <ui className="list-unstyled">
-              <li>United States</li>
-              <li>United Kingdom</li>
-              <li>Australia</li>
+              <Link style={{ color: `white` }} to="/Mymap">
+                <li>Find Stores</li>
+              </Link>
               <li>Support</li>
             </ui>
           </div>

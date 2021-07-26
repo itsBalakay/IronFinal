@@ -21,6 +21,7 @@ import { useHistory } from "react-router-dom";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer/Footer";
 import FeedBack from "./components/Feedback/Feedback";
+import Map from "./components/Map";
 
 function App() {
   let [user, setUser] = useState({});
@@ -79,169 +80,187 @@ function App() {
   return (
     <TheContext.Provider value={{ user, setUser, getTheUser }}>
       <div className="App">
-        <h1
-          style={{
-            textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
+        <div className="page-container">
+          <div className="content-wrap">
+            <h1
+              style={{
+                textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3)`,
-          }}
-        >
-          <span>
-            <img
-              style={{ width: "4%" }}
-              src={`/photos/noun_football jersey_1703987.svg`}
-              alt="shirtlogo"
-            />
-          </span>
-          Retro Football Shirts
-          <span>
-            <img
-              style={{ width: "4%" }}
-              src={`/photos/noun_football jersey_1703987.svg`}
-              alt="shirtlogo"
-            />
-          </span>
-        </h1>
-        {user?.name ? (
-          <div>
-            <i>Welcome back, {user?.name}</i>
-          </div>
-        ) : (
-          <i></i>
-        )}
+              }}
+            >
+              <span>
+                <img
+                  style={{ width: "4%" }}
+                  src={`/photos/noun_football jersey_1703987.svg`}
+                  alt="shirtlogo"
+                />
+              </span>
+              Retro Football Shirts
+              <span>
+                <img
+                  style={{ width: "4%" }}
+                  src={`/photos/noun_football jersey_1703987.svg`}
+                  alt="shirtlogo"
+                />
+              </span>
+            </h1>
+            {user?.name ? (
+              <div>
+                <i>Welcome back, {user?.name}</i>
+              </div>
+            ) : (
+              <i></i>
+            )}
 
-        <nav className="navBar">
-          <Link to="/">Home</Link>
-          <Link to="/NewShirts">New Shirts</Link>
+            <nav className="navBar">
+              <Link to="/">Home</Link>
+              <Link to="/NewShirts">New Shirts</Link>
 
-          <Link class="dropbtn" to="/RetroShirts">
-            Retro Shirts
-          </Link>
+              <Link class="dropbtn" to="/RetroShirts">
+                Retro Shirts
+              </Link>
 
-          <Link to="/Favourites">Favorites</Link>
+              <Link to="/Favourites">Favorites</Link>
 
-          {user?.name ? (
-            <>
-              <Link to="/AddPost">AddPost</Link>
-              <Link to="/Profile">Profile</Link>
-            </>
-          ) : (
-            <Link to="/Auth">Login/Signup</Link>
-          )}
+              {user?.name ? (
+                <>
+                  <Link to="/AddPost">AddPost</Link>
+                  <Link to="/Profile">Profile</Link>
+                </>
+              ) : (
+                <Link to="/Auth">Login/Signup</Link>
+              )}
 
-          <Link to="/Mycart">Cart</Link>
+              <Link to="/Mycart">Cart</Link>
 
-          <div>
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                placeholder="Search Item..."
-                value={searchTerm}
-                onChange={handleChange}
+              <div>
+                <form onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    placeholder="Search Item..."
+                    value={searchTerm}
+                    onChange={handleChange}
+                  />
+                  <button>Search</button>
+                </form>
+              </div>
+            </nav>
+
+            <Switch>
+              <Route exact path="/" render={(props) => <Home {...props} />} />
+              <Route
+                exact
+                path="/AddPost"
+                render={(props) => <AddPost {...props} />}
               />
-              <button>Search</button>
-            </form>
+              <Route
+                exact
+                path="/Favourites"
+                render={(props) => <Favs {...props} user={user} />}
+              />
+              <Route
+                exact
+                path="/Auth"
+                render={(props) => <Auth {...props} />}
+              />
+              <Route
+                exact
+                path="/Profile"
+                render={(props) => <Profile {...props} user={user} />}
+              />
+              <Route
+                exact
+                path="/RetroShirts"
+                render={(props) => <Retroshirts {...props} user={user} />}
+              />
+              <Route
+                exact
+                path="/NewShirts"
+                render={(props) => <Newshirts {...props} user={user} />}
+              />
+              <Route
+                exact
+                path="/Shirts/:shirtId"
+                render={(props) => <Singleshirt {...props} />}
+              />
+              <Route
+                exact
+                path="/Bundesliga"
+                render={(props) => <Bundesliga {...props} />}
+              />
+              <Route
+                exact
+                path="/PremierLeague"
+                render={(props) => <Prem {...props} />}
+              />
+              <Route
+                exact
+                path="/LaLiga"
+                render={(props) => <LaLiga {...props} />}
+              />
+              <Route
+                exact
+                path="/SerieA"
+                render={(props) => <SerieA {...props} />}
+              />
+              <Route
+                exact
+                path="/Mycart"
+                render={(props) => <Cart {...props} />}
+              />
+              <Route
+                exact
+                path="/Mymap"
+                render={(props) => <Map {...props} />}
+              />
+              <Route
+                exact
+                path="/Search"
+                render={(props) => <Search shirts={searchResults} {...props} />}
+              />
+            </Switch>
           </div>
-        </nav>
 
-        <Switch>
-          <Route exact path="/" render={(props) => <Home {...props} />} />
-          <Route
-            exact
-            path="/AddPost"
-            render={(props) => <AddPost {...props} />}
+          <Footer />
+          <FeedBack
+            style={{ zIndex: "1", position: "fixed", left: "2px!" }}
+            position="right"
+            numberOfStars={5}
+            headerText="Have Feedback? 📝"
+            bodyText="Need help? Type your fedback below and we'll fix it 🙂"
+            buttonText="Feedback"
+            handleClose={() => console.log("handleclose")}
+            handleSubmit={(data) =>
+              fetch("https://formspree.io/xxxxxxx", {
+                headers: {
+                  Accept: "application/json",
+                  "Content-Type": "application/json",
+                },
+                method: "POST", // or 'PUT'
+                body: JSON.stringify(data),
+              })
+                .then((response) => {
+                  if (!response.ok) {
+                    return Promise.reject(
+                      "Our servers are having issues! We couldn't send your feedback!"
+                    );
+                  }
+                  response.json();
+                })
+                .then(() => {
+                  alert("Success!");
+                })
+                .catch((error) => {
+                  alert(
+                    "Our servers are having issues! We couldn't send your feedback!",
+                    error
+                  );
+                })
+            }
+            handleButtonClick={() => console.log("handleButtonClick")}
           />
-          <Route
-            exact
-            path="/Favourites"
-            render={(props) => <Favs {...props} user={user} />}
-          />
-          <Route exact path="/Auth" render={(props) => <Auth {...props} />} />
-          <Route
-            exact
-            path="/Profile"
-            render={(props) => <Profile {...props} user={user} />}
-          />
-          <Route
-            exact
-            path="/RetroShirts"
-            render={(props) => <Retroshirts {...props} user={user} />}
-          />
-          <Route
-            exact
-            path="/NewShirts"
-            render={(props) => <Newshirts {...props} user={user} />}
-          />
-          <Route
-            exact
-            path="/Shirts/:shirtId"
-            render={(props) => <Singleshirt {...props} />}
-          />
-          <Route
-            exact
-            path="/Bundesliga"
-            render={(props) => <Bundesliga {...props} />}
-          />
-          <Route
-            exact
-            path="/PremierLeague"
-            render={(props) => <Prem {...props} />}
-          />
-          <Route
-            exact
-            path="/LaLiga"
-            render={(props) => <LaLiga {...props} />}
-          />
-          <Route
-            exact
-            path="/SerieA"
-            render={(props) => <SerieA {...props} />}
-          />
-          <Route exact path="/Mycart" render={(props) => <Cart {...props} />} />
-          <Route
-            exact
-            path="/Search"
-            render={(props) => <Search shirts={searchResults} {...props} />}
-          />
-        </Switch>
+        </div>
       </div>
-      <Footer />
-      <FeedBack
-        style={{ zIndex: "1", position: "fixed", left: "2px!" }}
-        position="right"
-        numberOfStars={5}
-        headerText="Have Feedback? 📝"
-        bodyText="Need help? Type your fedback below and we'll fix it 🙂"
-        buttonText="Feedback"
-        handleClose={() => console.log("handleclose")}
-        handleSubmit={(data) =>
-          fetch("https://formspree.io/xxxxxxx", {
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json",
-            },
-            method: "POST", // or 'PUT'
-            body: JSON.stringify(data),
-          })
-            .then((response) => {
-              if (!response.ok) {
-                return Promise.reject(
-                  "Our servers are having issues! We couldn't send your feedback!"
-                );
-              }
-              response.json();
-            })
-            .then(() => {
-              alert("Success!");
-            })
-            .catch((error) => {
-              alert(
-                "Our servers are having issues! We couldn't send your feedback!",
-                error
-              );
-            })
-        }
-        handleButtonClick={() => console.log("handleButtonClick")}
-      />
     </TheContext.Provider>
   );
 }

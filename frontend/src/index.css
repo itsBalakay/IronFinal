@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-height: 100%;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif; */
@@ -79,7 +80,7 @@ code {
 }
 
 .bottomHome {
-  margin: 0px 100px 100px 100px;
+  margin: 0px 100px 70px 100px;
   display: flex;
   justify-content: space-around;
   height: 300px;
@@ -90,7 +91,7 @@ code {
   height: 100%;
   background-image: url("https://pbs.twimg.com/media/DYvzdhnX0AUkpbA.jpg");
   background-size: 100%;
-  margin: 0px 10px;
+  margin: 30px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +143,7 @@ code {
   height: 100%;
   background-image: url("https://e0.365dm.com/21/04/1600x900/skysports-premier-league-top-six_5347528.jpg?20210418193904");
   background-size: 100%;
-  margin: 0px 10px;
+  margin: 30px 10px;
   color: white;
   display: flex;
   align-items: center;
@@ -152,7 +153,7 @@ code {
 }
 
 .bottomHome-2 {
-  margin: 100px 100px;
+  margin: 0px 100px 100px 100px;
   display: flex;
   justify-content: space-around;
   height: 300px;
@@ -258,9 +259,14 @@ code {
   position: absolute;
 }
 
-
-/* single shirt page CSS */
 .singleShirtFlex{
   display:flex;
   flex-direction: column;
 }
+/* CSS for home latest arrivals */
+.shirtsLatest {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 30px 50px 30px;
+}
+/* single shirt page CSS */
