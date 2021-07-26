@@ -10,8 +10,11 @@ body {
     overflow-x: hidden;
 }
 
-.fav-list-container {
+.favList{
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+  }
+.favList li{
+    list-style: none;
 }
 

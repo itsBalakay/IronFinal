@@ -38,9 +38,9 @@ function Favs(props) {
 
   return (
     <div>
-      <ul>
+      <div className="favList">
         <ShowPosts />
-      </ul>
+      </div>
     </div>
   );
 }
