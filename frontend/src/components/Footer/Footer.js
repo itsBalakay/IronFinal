@@ -74,7 +74,7 @@ function Footer() {
         <hr />
         <div className="row">
           <p className="col-sm">
-            🇺🇸 USA &copy;{new Date().getFullYear()} RETRO SHIRT | All rights
+            🇺🇸USA &copy;{new Date().getFullYear()} RETRO SHIRT | All rights
             reserved |
             <a
               style={{ color: `white` }}
