@@ -1,23 +1,55 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 import YoutubeEmbed from "./YoutubeEmbed";
+import actions from "../api";
 
 function Home(props) {
-  // const [allPosts, setAllPosts] = useState([]);
+  const [latest, setLatest] = useState([]);
 
-  // useEffect(async () => {
-  //   let res = await actions.getAllPosts();
-  //   console.log(res);
-  //   setAllPosts(res.data);
-  // }, []);
+  const getLatest = async () => {
+    let res = await actions.shirts();
+    setLatest(res.data);
+    let result = res.data.splice(res.data.length - 3, res.data.length);
+    setLatest(result);
+    console.log(result);
+  };
 
-  // const ShowPosts = () =>
-  //   allPosts.map((eachPost) => (
-  //     <li key={eachPost._id}>
-  //       {eachPost.post} <i>created by ...{eachPost.userId?.name}</i>
-  //     </li>
-  //   ));
+  useEffect(async () => {
+    getLatest();
+  }, []);
+
+  function ShowLatest() {
+    return latest.map((latestShirt) => {
+      return (
+        <div className="home-latest">
+          <ul className="shirtList" style={{ border: `#7dba5d` }}>
+            <li>
+              <Link to={`/Shirts/${latestShirt._id}`}>
+                <img
+                  className="shirtImages"
+                  src={latestShirt.imageUrl[0]}
+                  alt="shirtpic"
+                />
+              </Link>
+            </li>
+
+            <li>{latestShirt.club}</li>
+
+            <li style={{ color: `red`, fontWeight: `bold` }}>
+              ${latestShirt.price}
+            </li>
+            <li>
+              <Link to="/Mycart">
+                <button>Add to Cart</button>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      );
+    });
+  }
 
   return (
     <>
@@ -28,6 +60,8 @@ function Home(props) {
       {/* <div className="showPostDiv">
         <ul><ShowPosts /></ul>
       </div> */}
+
+      <h1>⚽Top Leagues⚽</h1>
       <div className="bottomHome">
         <div className="halfHome-1">
           <Link
@@ -71,6 +105,11 @@ function Home(props) {
           </Link>
         </div>
       </div>
+      <h1>🔥Latest Arrivals🔥</h1>
+      <div className="shirtsLatest">
+        <ShowLatest />
+      </div>
+
       <YoutubeEmbed />
       {/* embedId="KlbRiCYE-OQ" */}
     </>

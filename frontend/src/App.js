@@ -220,7 +220,7 @@ function App() {
               />
             </Switch>
           </div>
-          <Map />
+
           <Footer />
           <FeedBack
             style={{ zIndex: "1", position: "fixed", left: "2px!" }}
