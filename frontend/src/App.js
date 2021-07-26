@@ -79,7 +79,12 @@ function App() {
   return (
     <TheContext.Provider value={{ user, setUser, getTheUser }}>
       <div className="App">
-        <h1>
+        <h1
+          style={{
+            textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3)`,
+          }}
+        >
           <span>
             <img
               style={{ width: "4%" }}
@@ -107,17 +112,11 @@ function App() {
         <nav className="navBar">
           <Link to="/">Home</Link>
           <Link to="/NewShirts">New Shirts</Link>
-          <div className="dropdown">
-            <Link class="dropbtn" to="/RetroShirts">
-              Retro Shirts
-            </Link>
-            {/* <div class="dropdown-content">
-              <Link to="/Bundesliga">Bundesliga</Link>
-              <Link to="/PremierLeague">Premier League</Link>
-              <Link to="/LaLiga">La Liga</Link>
-              <Link to="/SerieA">SerieA</Link>
-            </div> */}
-          </div>
+
+          <Link class="dropbtn" to="/RetroShirts">
+            Retro Shirts
+          </Link>
+
           <Link to="/Favourites">Favorites</Link>
 
           {user?.name ? (

@@ -21,7 +21,7 @@ code {
 .navBar {
   display: flex;
   justify-content: space-around;
-  background-color: lightgrey;
+  background-color: whitesmoke;
   padding: 1rem;
 }
 
