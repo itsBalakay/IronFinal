@@ -20,6 +20,11 @@ function Singleshirt(props) {
           src={singleShirt?.imageUrl[0]}
           alt="single-shirt-pic"
         />
+        <img
+          style={{ width: `100%` }}
+          src={singleShirt?.imageUrl[1]}
+          alt="single-shirt-pic"
+        />
       </div>
       <div className="singleDescription">
         <ul>

@@ -257,3 +257,10 @@ code {
   text-align: center;
   position: absolute;
 }
+
+
+/* single shirt page CSS */
+.singleShirtFlex{
+  display:flex;
+  flex-direction: column;
+}
