@@ -46,9 +46,21 @@ function Retroshirts(props) {
                 />
               </Link>
             </li>
-            <li>{retroShirt.year}</li>
-            <li>{retroShirt.club}</li>
-            <li>{retroShirt.size}</li>
+            <li>
+              <Link style={{ color: `black` }} to={`/Shirts/${retroShirt._id}`}>
+                {retroShirt.year}
+              </Link>
+            </li>
+            <li>
+              <Link style={{ color: `black` }} to={`/Shirts/${retroShirt._id}`}>
+                {retroShirt.club}
+              </Link>
+            </li>
+            <li>
+              <Link style={{ color: `black` }} to={`/Shirts/${retroShirt._id}`}>
+                {retroShirt.size}
+              </Link>
+            </li>
             <li style={{ color: `red`, fontWeight: `bold` }}>
               ${retroShirt.price}
             </li>

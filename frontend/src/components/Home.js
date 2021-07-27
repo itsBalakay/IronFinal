@@ -35,7 +35,14 @@ function Home(props) {
               </Link>
             </li>
 
-            <li>{latestShirt.club}</li>
+            <li>
+              <Link
+                style={{ color: `black` }}
+                to={`/Shirts/${latestShirt._id}`}
+              >
+                {latestShirt.club}
+              </Link>
+            </li>
 
             <li style={{ color: `red`, fontWeight: `bold` }}>
               ${latestShirt.price}
@@ -108,6 +115,21 @@ function Home(props) {
       <h1>🔥Latest Arrivals🔥</h1>
       <div className="shirtsLatest">
         <ShowLatest />
+      </div>
+      <div className="container-home">
+        Make
+        <div className="flip">
+          <div>
+            <div>wOrK</div>
+          </div>
+          <div>
+            <div>lifeStyle</div>
+          </div>
+          <div>
+            <div>Everything</div>
+          </div>
+        </div>
+        AweSoMe!
       </div>
 
       <YoutubeEmbed />

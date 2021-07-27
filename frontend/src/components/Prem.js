@@ -45,9 +45,21 @@ function Prem(props) {
               />
             </Link>
           </li>
-          <li>{premShirt.year}</li>
-          <li>{premShirt.club}</li>
-          <li>{premShirt.size}</li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${premShirt._id}`}>
+              {premShirt.year}
+            </Link>
+          </li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${premShirt._id}`}>
+              {premShirt.club}
+            </Link>
+          </li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${premShirt._id}`}>
+              {premShirt.size}
+            </Link>
+          </li>
           <li style={{ color: `red`, fontWeight: `bold` }}>
             ${premShirt.price}
           </li>

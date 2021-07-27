@@ -44,9 +44,21 @@ function SerieA(props) {
               />
             </Link>
           </li>
-          <li>{serieAShirt.year}</li>
-          <li>{serieAShirt.club}</li>
-          <li>{serieAShirt.size}</li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${serieAShirt._id}`}>
+              {serieAShirt.year}
+            </Link>
+          </li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${serieAShirt._id}`}>
+              {serieAShirt.club}
+            </Link>
+          </li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${serieAShirt._id}`}>
+              {serieAShirt.size}
+            </Link>
+          </li>
           <li style={{ color: `red`, fontWeight: `bold` }}>
             ${serieAShirt.price}
           </li>

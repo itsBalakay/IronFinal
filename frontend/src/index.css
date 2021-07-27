@@ -4,7 +4,7 @@ body {
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif; */
-  font-family: "MonoLisa";
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: antiquewhite;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -239,6 +239,79 @@ code {
     0 0 40px green, 0 0 55px green, 0 0 70px green; */
 }
 
+/* before Youtube CSS */
+.container-home {
+  color: black;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+}
+
+.flip {
+  height: 50px;
+  overflow: hidden;
+}
+
+.flip > div > div {
+  color: #fff;
+  padding: 0px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+.flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+.flip div div {
+  background: #42c58a;
+}
+.flip div:first-child div {
+  background: #4ec7f3;
+}
+.flip div:last-child div {
+  background: #dc143c;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+p {
+  position: fixed;
+  width: 100%;
+  bottom: 30px;
+  font-size: 12px;
+  color: #999;
+  margin-top: 200px;
+}
+
 /* CSS for YouTube */
 .video-responsive {
   overflow: hidden;
@@ -250,7 +323,7 @@ code {
 .video-responsive iframe {
   left: 0;
   top: 0;
-  height: 70%;
+  height: 80%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -259,8 +332,8 @@ code {
   position: absolute;
 }
 
-.singleShirtFlex{
-  display:flex;
+.singleShirtFlex {
+  display: flex;
   flex-direction: column;
 }
 /* CSS for home latest arrivals */
@@ -270,3 +343,23 @@ code {
   margin: 20px 30px 50px 30px;
 }
 /* single shirt page CSS */
+
+button {
+  background-color: white;
+  border: 2px solid #3671ca;
+  border-radius: 5px;
+  color: black;
+  height: inherit;
+  width: inherit;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+  box-shadow: 2px 2px rgba(77, 77, 77, 0.5);
+}
+
+button:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+button:active {
+  border: 10px dotted;
+}
