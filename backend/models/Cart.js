@@ -10,7 +10,7 @@ const cartSchema = new Schema({
   price: Number,
   notes: String,
   imageUrl: [String],
-  //   userId: { type: Schema.Types.ObjectId, ref: "User" },
+  userId: { type: Schema.Types.ObjectId, ref: "User" },
 });
 
 module.exports = model("Cart", cartSchema);
