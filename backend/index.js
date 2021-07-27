@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
+const nodemailer = require("nodemailer");
 
 const URI = process.env.MONGODB_URI || "mongodb://localhost/Toro";
 console.log(URI);

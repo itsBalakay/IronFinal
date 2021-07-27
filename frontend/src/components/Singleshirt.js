@@ -25,6 +25,13 @@ function Singleshirt(props) {
     getLike();
   }, []);
 
+  //function to save retro shirt into the api
+  const addRetroToCart = async (props) => {
+    console.log("is this working?");
+    let res = await actions.addCart(props);
+    console.log(res);
+  };
+
   function ShowLikes() {
     return like.map((latestShirt) => {
       return (
@@ -110,7 +117,12 @@ function Singleshirt(props) {
             </li>
             <li>
               <Link to="/Mycart">
-                <button className="mylist-popbutton">➕ Add to Cart</button>
+                <button
+                  className="mylist-popbutton"
+                  onClick={() => addRetroToCart({ singleShirt })}
+                >
+                  Add to Cart
+                </button>
               </Link>
             </li>
           </ul>

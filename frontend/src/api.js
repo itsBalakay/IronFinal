@@ -33,6 +33,15 @@ const actions = {
     return await axios.get(`${serverUrl}/all-the-posts`, createHeaders());
   },
 
+  addCart: async (shirt) => {
+    let res = await axios.post(
+      `${serverUrl}/add-to-cart`,
+      shirt,
+      createHeaders()
+    );
+    return res;
+  },
+
   shirts: async () => {
     return await axios.get(`${serverUrl}/all-the-shirts`, createHeaders());
   },
