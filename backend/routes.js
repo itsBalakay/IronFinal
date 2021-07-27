@@ -43,6 +43,12 @@ router.post("/add-to-cart", authorize, async (req, res) => {
   });
 });
 
+router.get("/get-cart", (req, res) => {
+  Cart.find().then((cartItems) => {
+    res.json(cartItems);
+  });
+});
+
 router.get("/all-the-posts", (req, res) => {
   Post.find()
     .populate("userId")

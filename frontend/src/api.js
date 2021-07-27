@@ -42,6 +42,10 @@ const actions = {
     return res;
   },
 
+  getCart: async (shirt) => {
+    return await axios.get(`${serverUrl}/get-cart`, createHeaders());
+  },
+
   shirts: async () => {
     return await axios.get(`${serverUrl}/all-the-shirts`, createHeaders());
   },

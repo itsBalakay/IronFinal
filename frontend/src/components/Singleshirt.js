@@ -26,9 +26,9 @@ function Singleshirt(props) {
   }, []);
 
   //function to save retro shirt into the api
-  const addRetroToCart = async (props) => {
+  const addRetroToCart = async (singleShirt) => {
     console.log("is this working?");
-    let res = await actions.addCart(props);
+    let res = await actions.addCart(singleShirt);
     console.log(res);
   };
 
@@ -119,7 +119,7 @@ function Singleshirt(props) {
               <Link to="/Mycart">
                 <button
                   className="mylist-popbutton"
-                  onClick={() => addRetroToCart({ singleShirt })}
+                  onClick={() => addRetroToCart(singleShirt)}
                 >
                   Add to Cart
                 </button>

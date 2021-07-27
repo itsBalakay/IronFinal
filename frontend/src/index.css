@@ -363,3 +363,30 @@ button:hover {
 button:active {
   border: 10px dotted;
 }
+
+
+
+/*cart css*/
+
+.cart-div{
+  display:flex;
+  margin: 10px 200px;
+  border: solid;
+  background-color:white;
+}
+.cart-image{
+  text-align: left;
+}
+.cart-details{
+  display:flex;
+  flex-direction: column;
+}
+.cart-price{
+  display:flex;
+  align-items: center;
+}
+.button-remove-div{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+}
