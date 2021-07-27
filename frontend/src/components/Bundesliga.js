@@ -44,9 +44,21 @@ function Bundesliga(props) {
               />
             </Link>
           </li>
-          <li>{bunShirt.year}</li>
-          <li>{bunShirt.club}</li>
-          <li>{bunShirt.size}</li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${bunShirt._id}`}>
+              {bunShirt.year}
+            </Link>
+          </li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${bunShirt._id}`}>
+              {bunShirt.club}
+            </Link>
+          </li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${bunShirt._id}`}>
+              {bunShirt.size}
+            </Link>
+          </li>
           <li style={{ color: `red`, fontWeight: `bold` }}>
             ${bunShirt.price}
           </li>

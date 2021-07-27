@@ -29,7 +29,7 @@ function Singleshirt(props) {
     return like.map((latestShirt) => {
       return (
         <div className="home-latest">
-          <ul className="shirtList" style={{ border: `#7dba5d` }}>
+          <ul className="shirtList">
             <li>
               <Link to={`/Shirts/${latestShirt._id}`}>
                 <img
@@ -40,7 +40,14 @@ function Singleshirt(props) {
               </Link>
             </li>
 
-            <li>{latestShirt.club}</li>
+            <li>
+              <Link
+                style={{ color: `black` }}
+                to={`/Shirts/${latestShirt._id}`}
+              >
+                {latestShirt.club}
+              </Link>
+            </li>
 
             <li style={{ color: `red`, fontWeight: `bold` }}>
               ${latestShirt.price}

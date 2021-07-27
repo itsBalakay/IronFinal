@@ -44,9 +44,21 @@ function LaLiga(props) {
               />
             </Link>
           </li>
-          <li>{ligaShirt.year}</li>
-          <li>{ligaShirt.club}</li>
-          <li>{ligaShirt.size}</li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${ligaShirt._id}`}>
+              {ligaShirt.year}
+            </Link>
+          </li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${ligaShirt._id}`}>
+              {ligaShirt.club}
+            </Link>
+          </li>
+          <li>
+            <Link style={{ color: `black` }} to={`/Shirts/${ligaShirt._id}`}>
+              {ligaShirt.size}
+            </Link>
+          </li>
           <li style={{ color: `red`, fontWeight: `bold` }}>
             ${ligaShirt.price}
           </li>

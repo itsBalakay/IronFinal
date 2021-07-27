@@ -109,6 +109,21 @@ function Home(props) {
       <div className="shirtsLatest">
         <ShowLatest />
       </div>
+      <div className="container-home">
+        Make
+        <div className="flip">
+          <div>
+            <div>wOrK</div>
+          </div>
+          <div>
+            <div>lifeStyle</div>
+          </div>
+          <div>
+            <div>Everything</div>
+          </div>
+        </div>
+        AweSoMe!
+      </div>
 
       <YoutubeEmbed />
       {/* embedId="KlbRiCYE-OQ" */}

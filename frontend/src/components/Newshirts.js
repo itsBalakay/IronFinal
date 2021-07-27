@@ -42,9 +42,21 @@ function NewShirts(props) {
                 />
               </Link>
             </li>
-            <li>{newest.year}</li>
-            <li>{newest.club}</li>
-            <li>{newest.size}</li>
+            <li>
+              <Link style={{ color: `black` }} to={`/Shirts/${newest._id}`}>
+                {newest.year}
+              </Link>
+            </li>
+            <li>
+              <Link style={{ color: `black` }} to={`/Shirts/${newest._id}`}>
+                {newest.club}
+              </Link>
+            </li>
+            <li>
+              <Link style={{ color: `black` }} to={`/Shirts/${newest._id}`}>
+                {newest.size}
+              </Link>
+            </li>
             <li style={{ color: `red`, fontWeight: `bold` }}>
               ${newest.price}
             </li>
