@@ -35,7 +35,14 @@ function Home(props) {
               </Link>
             </li>
 
-            <li>{latestShirt.club}</li>
+            <li>
+              <Link
+                style={{ color: `black` }}
+                to={`/Shirts/${latestShirt._id}`}
+              >
+                {latestShirt.club}
+              </Link>
+            </li>
 
             <li style={{ color: `red`, fontWeight: `bold` }}>
               ${latestShirt.price}
