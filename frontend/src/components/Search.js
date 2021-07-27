@@ -41,11 +41,6 @@ function Search({ shirts }) {
             <li>{item.club}</li>
             <li>{item.size}</li>
             <li style={{ color: `red`, fontWeight: `bold` }}>${item.price}</li>
-            <li>
-              <Link to="/Mycart">
-                <button>Add to Cart</button>
-              </Link>
-            </li>
           </ul>
         </>
       );

@@ -46,6 +46,10 @@ const actions = {
     return await axios.get(`${serverUrl}/get-cart`, createHeaders());
   },
 
+  deleteItem: async () => {
+    return await axios.delete(`${serverUrl}/delete-cart-item`, createHeaders());
+  },
+
   shirts: async () => {
     return await axios.get(`${serverUrl}/all-the-shirts`, createHeaders());
   },

@@ -47,11 +47,6 @@ function Home(props) {
             <li style={{ color: `red`, fontWeight: `bold` }}>
               ${latestShirt.price}
             </li>
-            <li>
-              <Link to="/Mycart">
-                <button>Add to Cart</button>
-              </Link>
-            </li>
           </ul>
         </div>
       );

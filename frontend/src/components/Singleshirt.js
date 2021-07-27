@@ -59,11 +59,6 @@ function Singleshirt(props) {
             <li style={{ color: `red`, fontWeight: `bold` }}>
               ${latestShirt.price}
             </li>
-            <li>
-              <Link to="/Mycart">
-                <button>Add to Cart</button>
-              </Link>
-            </li>
           </ul>
         </div>
       );
@@ -109,21 +104,19 @@ function Singleshirt(props) {
               <span style={{ color: `maroon` }}>{singleShirt?.condition}</span>
             </li>
             <li>
-              Price: $<span style={{ color: `red` }}>{singleShirt?.price}</span>
+              Price: <span style={{ color: `red` }}>${singleShirt?.price}</span>
             </li>
             <li>
               Notes:{" "}
               <span style={{ color: `maroon` }}>{singleShirt?.notes}</span>
             </li>
             <li>
-              <Link to="/Mycart">
-                <button
-                  className="mylist-popbutton"
-                  onClick={() => addRetroToCart(singleShirt)}
-                >
-                  Add to Cart
-                </button>
-              </Link>
+              <button
+                className="mylist-popbutton"
+                onClick={() => addRetroToCart(singleShirt)}
+              >
+                Add to Cart
+              </button>
             </li>
           </ul>
         </div>

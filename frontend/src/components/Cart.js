@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "../index.css";
 import actions from "../api";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const [cart, setCart] = useState([]);
@@ -16,8 +17,16 @@ function Cart() {
     getCartItems();
   }, []);
 
+  const removeItem = async (i) => {
+    let copyOfCart = [...cart];
+    let res = await actions.deleteItem();
+    console.log("button working?");
+    copyOfCart.splice(i, 1);
+    setCart(copyOfCart);
+  };
+
   const ShowCart = () => {
-    return cart.map((cartItem) => {
+    return cart.map((cartItem, i) => {
       return (
         <div className="cart-div">
           <div className="cart-image">
@@ -37,7 +46,9 @@ function Cart() {
             <h5 style={{ color: `red` }}>${cartItem.price}</h5>
           </div>
           <div className="button-remove-div">
-            <button className="cart-remove">Remove</button>
+            <button className="cart-remove" onClick={() => removeItem(i)}>
+              Remove
+            </button>
           </div>
         </div>
       );
@@ -50,7 +61,9 @@ function Cart() {
         <ShowCart />
       </div>
       <div>
-        <button>Continue Shoppping</button>
+        <Link to="/">
+          <button>Continue Shoppping</button>
+        </Link>
         <button>Checkout</button>
       </div>
     </>

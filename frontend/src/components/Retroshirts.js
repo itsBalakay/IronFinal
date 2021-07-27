@@ -64,11 +64,6 @@ function Retroshirts(props) {
             <li style={{ color: `red`, fontWeight: `bold` }}>
               ${retroShirt.price}
             </li>
-            <li>
-              <Link to="/Mycart">
-                <button>Add to Cart</button>
-              </Link>
-            </li>
           </ul>
         </>
       );

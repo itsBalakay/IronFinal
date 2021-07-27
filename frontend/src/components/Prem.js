@@ -63,11 +63,6 @@ function Prem(props) {
           <li style={{ color: `red`, fontWeight: `bold` }}>
             ${premShirt.price}
           </li>
-          <li>
-            <Link to="/Mycart">
-              <button>Add to Cart</button>
-            </Link>
-          </li>
         </ul>
       );
     });

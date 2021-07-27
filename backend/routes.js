@@ -49,6 +49,12 @@ router.get("/get-cart", (req, res) => {
   });
 });
 
+router.delete("/delete-cart-item", authorize, async (req, res) => {
+  Cart.deleteOne().then((removeItem) => {
+    res.json(removeItem);
+  });
+});
+
 router.get("/all-the-posts", (req, res) => {
   Post.find()
     .populate("userId")
