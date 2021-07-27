@@ -68,7 +68,7 @@ function Home(props) {
         <ul><ShowPosts /></ul>
       </div> */}
 
-      <h1>⚽Top Leagues⚽</h1>
+      <h1>⚽Shop by League⚽</h1>
       <div className="bottomHome">
         <div className="halfHome-1">
           <Link

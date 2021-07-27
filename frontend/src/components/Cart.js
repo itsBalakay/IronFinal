@@ -1,25 +1,11 @@
-// import React, { useState } from "react";
-// import "../index.css";
-// import PayPal from "./PayPal/Paypal";
+import React from "react";
 
-// function Cart() {
-//   const [checkout, setCheckOut] = useState(false);
+function Cart(props) {
+  return (
+    <div>
+      <button>Checkout</button>
+    </div>
+  );
+}
 
-//   return (
-//     <div className="paypal">
-//       {checkout ? (
-//         <PayPal />
-//       ) : (
-//         <button
-//           onClick={() => {
-//             setCheckOut(true);
-//           }}
-//         >
-//           Checkout
-//         </button>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default Cart;
+export default Cart;

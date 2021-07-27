@@ -4,6 +4,7 @@ const router = express.Router();
 const Post = require("./models/Post");
 const Shirts = require("./models/Shirts");
 const User = require("./models/User");
+const Cart = require("./models/Cart");
 /**ALL OUR BACKEND ROUTES */
 
 router.get("/", (req, res) => {
@@ -30,6 +31,15 @@ router.post("/add-feedback", authorize, async (req, res) => {
   // newFeedback.userId = res.locals.user._id;
   Feedback.create(newFeedback).then((feedback) => {
     res.json(feedback);
+  });
+});
+
+router.post("/add-to-cart", authorize, async (req, res) => {
+  let newItem = req.body;
+  console.log(newItem, "guava");
+  newItem.userId = res.locals.user._id;
+  Cart.create(newItem).then((shirtCart) => {
+    res.json(shirtCart);
   });
 });
 
