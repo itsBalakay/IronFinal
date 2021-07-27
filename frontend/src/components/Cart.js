@@ -45,9 +45,15 @@ function Cart() {
   };
 
   return (
-    <div>
-      <ShowCart />
-    </div>
+    <>
+      <div>
+        <ShowCart />
+      </div>
+      <div>
+        <button>Continue Shoppping</button>
+        <button>Checkout</button>
+      </div>
+    </>
   );
 }
 
