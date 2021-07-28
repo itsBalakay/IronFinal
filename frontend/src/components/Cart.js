@@ -60,7 +60,7 @@ function Cart() {
       <div>
         <ShowCart />
       </div>
-      <div>
+      <div className="cart-bottom-button">
         <Link to="/">
           <button>Continue Shoppping</button>
         </Link>

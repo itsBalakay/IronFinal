@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Marker } from "google-map-react";
 
 export default function Map({ options, onMount, className, onMountProps }) {
   const ref = useRef();
@@ -19,15 +20,17 @@ export default function Map({ options, onMount, className, onMountProps }) {
   if (map && typeof onMount === `function`) onMount(map, onMountProps);
   return (
     <>
-      <h3>Contact Us</h3>
-      <p>
-        We look forward to working with you, let us know if you have any
-        questions by clicking the <b>Feedback</b> button below the page 🙂
-      </p>
+      <div className="map-contact">
+        <h3>Contact Us</h3>
+        <h6>
+          We look forward to working with you, let us know if you have any
+          questions by clicking the <b>Feedback</b> button below the page 🙂
+        </h6>
+      </div>
       <h3>Our Store Location</h3>
-      <p>
+      <h6>
         1516 N. 5th St., Billy Penn Studios Suite 302, Philadelphia PA 19122{" "}
-      </p>
+      </h6>
       <h4>Store Hours</h4>
       <ul style={{ color: `blue`, listStyle: `none` }}>
         <li>Mon - Fri : 9am-10pm</li>
@@ -37,12 +40,12 @@ export default function Map({ options, onMount, className, onMountProps }) {
         For return and exchange please email us using the following email
         address with your order ID{" "}
       </h4>
-      <p>
+      <h6>
         <b>Email:</b> Ty@replicacreative.com or Alanna@replicacreative.com
-      </p>
-      <p>
+      </h6>
+      <h6>
         <b>Phone:</b> (215)567 7107
-      </p>
+      </h6>
 
       <div
         style={{ height: `60vh`, margin: `1em 0`, borderRadius: `0.5em` }}
