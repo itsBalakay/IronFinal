@@ -64,7 +64,9 @@ function Cart() {
         <Link to="/">
           <button>Continue Shoppping</button>
         </Link>
-        <button>Checkout</button>
+        <Link to="/checkout">
+          <button>Checkout</button>
+        </Link>
       </div>
     </>
   );

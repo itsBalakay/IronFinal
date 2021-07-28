@@ -1,6 +1,8 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
+const Stripe = require("stripe");
+const stripe = Stripe(process.env.STRIPE_SECRET_TEST);
 const Post = require("./models/Post");
 const Shirts = require("./models/Shirts");
 const User = require("./models/User");
@@ -53,6 +55,30 @@ router.delete("/delete-cart-item", authorize, async (req, res) => {
   Cart.deleteOne().then((removeItem) => {
     res.json(removeItem);
   });
+});
+
+router.post("/payment", authorize, async (req, res) => {
+  let { amount, id } = req.body;
+  try {
+    const payment = await stripe.paymentIntents.create({
+      amount,
+      currency: "USD",
+      description: "Retro Shirts Football",
+      payment_method: id,
+      confirm: true,
+    });
+    console.log("Payment", payment);
+    res.json({
+      message: "Payment successful",
+      success: true,
+    });
+  } catch (error) {
+    console.log("Error", error);
+    res.json({
+      message: "Payment failed",
+      success: false,
+    });
+  }
 });
 
 router.get("/all-the-posts", (req, res) => {

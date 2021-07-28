@@ -50,6 +50,18 @@ const actions = {
     return await axios.delete(`${serverUrl}/delete-cart-item`, createHeaders());
   },
 
+  stripePay: async (id) => {
+    let res = await axios.post(
+      `${serverUrl}/payment`,
+      {
+        amount: 1000,
+        id,
+      },
+      createHeaders()
+    );
+    return res;
+  },
+
   shirts: async () => {
     return await axios.get(`${serverUrl}/all-the-shirts`, createHeaders());
   },

@@ -4,10 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+
+const stripePromise = loadStripe("process.env.publishableKey");
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <Elements stripe={stripePromise}>
+      <App />
+    </Elements>
   </BrowserRouter>,
   document.getElementById("root")
 );

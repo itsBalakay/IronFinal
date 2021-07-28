@@ -22,6 +22,7 @@ import Cart from "./components/Cart";
 import Footer from "./components/Footer/Footer";
 import FeedBack from "./components/Feedback/Feedback";
 import Map from "./components/Map";
+import Checkout from "./components/Checkout";
 
 function App() {
   let [user, setUser] = useState({});
@@ -218,6 +219,11 @@ function App() {
                 exact
                 path="/Search"
                 render={(props) => <Search shirts={searchResults} {...props} />}
+              />
+              <Route
+                exact
+                path="/checkout"
+                render={(props) => <Checkout {...props} />}
               />
             </Switch>
           </div>
