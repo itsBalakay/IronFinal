@@ -1,0 +1,11 @@
+.button-logout-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-logout-div button:hover {
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+}

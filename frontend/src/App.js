@@ -236,7 +236,7 @@ function App() {
             position="right"
             numberOfStars={5}
             headerText="Have Feedback? 📝"
-            bodyText="Need help? Type your fedback below and we'll fix it 🙂"
+            bodyText="Need help? Type your fedback below and we'll fix it"
             buttonText="Feedback"
             handleClose={() => console.log("handleclose")}
             handleSubmit={(data) =>
