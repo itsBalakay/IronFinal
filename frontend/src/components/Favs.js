@@ -38,6 +38,10 @@ function Favs(props) {
 
   return (
     <div>
+      <div>
+        <h1>Show off your new shirts!</h1>
+        <h4>Sign in to show off your favorite shirts</h4>
+      </div>
       <div className="favList">
         <ShowPosts />
       </div>

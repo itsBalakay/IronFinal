@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "../index.css";
+import "../cart.css";
 import actions from "../api";
 import { Link } from "react-router-dom";
 

@@ -1,0 +1,19 @@
+.google-container{
+    margin: 30px 250px;
+    border: solid;
+    background-color:#212329;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.login-title{
+    margin: 30px 0px;
+    color:white;
+}
+
+.google-button-container{
+    margin: 30px 0px;
+}
