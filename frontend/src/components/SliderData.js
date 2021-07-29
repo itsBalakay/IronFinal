@@ -1,10 +1,6 @@
 export const SliderData = [
   {
     image:
-      "https://images.hindustantimes.com/img/2021/07/11/1600x900/Italy_Euro_2020_trophy_1626042203830_1626042228590.jpg",
-  },
-  {
-    image:
       "https://90l.tribuna.com/images/1c/6f/02/1c6f025b943c41bab582d44f004b83011200x630.jpg",
   },
   {

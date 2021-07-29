@@ -70,12 +70,12 @@ function Singleshirt(props) {
       <div className="singleShirtContainer">
         <div className="singleShirtFlex">
           <img
-            style={{ width: `100%` }}
+            style={{ width: `100%`, height: `100%` }}
             src={singleShirt?.imageUrl[0]}
             alt="single-shirt-pic"
           />
           <img
-            style={{ width: `100%` }}
+            style={{ width: `100%`, height: `100%` }}
             src={singleShirt?.imageUrl[1]}
             alt="single-shirt-pic"
           />
@@ -121,6 +121,7 @@ function Singleshirt(props) {
           </ul>
         </div>
       </div>
+
       <div>
         <h2>You may also like...</h2>
       </div>
