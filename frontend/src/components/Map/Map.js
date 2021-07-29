@@ -58,7 +58,9 @@ const Map = (props: any) => {
       <div
         style={{
           height: "60vh",
-          width: "100%",
+          width: "80%",
+          margin: "0 10% 2% 10%",
+          border: "solid",
         }}
       >
         <GoogleMapReact

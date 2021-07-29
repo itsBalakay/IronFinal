@@ -112,6 +112,7 @@ function Singleshirt(props) {
             </li>
             <li>
               <button
+                style={{ width: "20%" }}
                 className="mylist-popbutton"
                 onClick={() => addRetroToCart(singleShirt)}
               >

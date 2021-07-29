@@ -1,4 +1,4 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,7 +11,7 @@
 
 .footer {
   width: 80%;
-  height: 40vh;
+  height: 8;
   background-color: #212329;
   color: white;
   display: flex;

@@ -6,20 +6,20 @@ import axios from "axios";
 import { withRouter } from "react-router-dom";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 
-var CARD_OPTIONS = {
-  base: {
-    color: "#303238",
-    fontSize: "16px",
-    fontFamily: '"Open Sans", sans-serif',
-    fontSmoothing: "antialiased",
-    "::placeholder": {
-      color: "#CFD7DF",
+let CARD_OPTIONS = {
+  iconStyle: "solid",
+  style: {
+    base: {
+      iconColor: "#c4f0ff",
+      color: "white",
+      fontSize: "16px",
+      fontSmoothing: "antialiased",
+      ":-webkit-autofill": { color: "#fce883" },
+      "::placeholder": { color: "#87bbfd" },
     },
-  },
-  invalid: {
-    color: "#e5424d",
-    ":focus": {
-      color: "#303238",
+    invalid: {
+      iconColor: "#ffc7ee",
+      color: "#ffc7ee",
     },
   },
 };
@@ -71,7 +71,9 @@ function Checkout(props) {
               <CardElement options={CARD_OPTIONS} />
             </div>
           </fieldset>
-          <button>Pay</button>
+          <div className="PayRow">
+            <button className="checkout-button">Pay</button>
+          </div>
         </form>
       ) : (
         <div>Thank you for your purchase!</div>

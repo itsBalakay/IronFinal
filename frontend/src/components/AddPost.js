@@ -29,7 +29,7 @@ function AddPost(props) {
         <input type="text" onChange={handleChange} placeholder="league" />
         <input type="text" onChange={handleChange} placeholder="notes" />
         <input type="text" onChange={handleChange} placeholder="imageUrl" />
-        <button>Add</button>
+        <button style={{ width: "8%" }}>Add</button>
       </form>
     </div>
   );

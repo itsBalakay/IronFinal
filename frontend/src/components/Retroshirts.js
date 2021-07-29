@@ -35,7 +35,7 @@ function Retroshirts(props) {
   const ShowRetro = () => {
     return currentShirt.map((retroShirt) => {
       return (
-        <>
+        <div className="shirt-border">
           <ul className="shirtList">
             <li>
               <Link to={`/Shirts/${retroShirt._id}`}>
@@ -65,7 +65,7 @@ function Retroshirts(props) {
               ${retroShirt.price}
             </li>
           </ul>
-        </>
+        </div>
       );
     });
   };

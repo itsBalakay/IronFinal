@@ -118,25 +118,43 @@ function App() {
             )}
 
             <nav className="navBar">
-              <Link to="/">Home</Link>
-              <Link to="/NewShirts">New Shirts</Link>
+              <Link to="/" style={{ color: "white" }}>
+                Home
+              </Link>
+              <Link to="/NewShirts" style={{ color: "white" }}>
+                New Shirts
+              </Link>
 
-              <Link class="dropbtn" to="/RetroShirts">
+              <Link
+                class="dropbtn"
+                to="/RetroShirts"
+                style={{ color: "white" }}
+              >
                 Retro Shirts
               </Link>
 
-              <Link to="/Favourites">Favorites</Link>
+              <Link to="/Favourites" style={{ color: "white" }}>
+                Favorites
+              </Link>
 
               {user?.name ? (
                 <>
-                  <Link to="/AddPost">AddPost</Link>
-                  <Link to="/Profile">Profile</Link>
+                  <Link to="/AddPost" style={{ color: "white" }}>
+                    AddPost
+                  </Link>
+                  <Link to="/Profile" style={{ color: "white" }}>
+                    Profile
+                  </Link>
                 </>
               ) : (
-                <Link to="/Auth">Login/Signup</Link>
+                <Link to="/Auth" style={{ color: "white" }}>
+                  Login/Signup
+                </Link>
               )}
 
-              <Link to="/Mycart">Cart</Link>
+              <Link to="/Mycart" style={{ color: "white" }}>
+                Cart
+              </Link>
 
               <div>
                 <form onSubmit={handleSubmit}>
