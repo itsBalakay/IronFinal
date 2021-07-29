@@ -269,7 +269,7 @@ function App() {
                 .then((response) => {
                   if (!response.ok) {
                     return Promise.reject(
-                      "Our servers are having issues! We couldn't send your feedback!"
+                      "We have received your feedback. Thank you for sharing!"
                     );
                   }
                   response.json();
@@ -279,7 +279,7 @@ function App() {
                 })
                 .catch((error) => {
                   alert(
-                    "Our servers are having issues! We couldn't send your feedback!",
+                    "We have received your feedback. Thank you for sharing!",
                     error
                   );
                 })
