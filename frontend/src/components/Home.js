@@ -81,7 +81,11 @@ function Home(props) {
         <div className="halfHome-2">
           <Link
             to="/PremierLeague"
-            style={{ textDecoration: `none`, color: `white` }}
+            style={{
+              textDecoration: `none`,
+              color: `black`,
+              backgroundColor: "white",
+            }}
           >
             <h1 className="prem-h1">Premier League</h1>
           </Link>
@@ -90,7 +94,14 @@ function Home(props) {
 
       <div className="bottomHome-2">
         <div className="halfHome-3">
-          <Link to="/LaLiga" style={{ textDecoration: `none`, color: `white` }}>
+          <Link
+            to="/LaLiga"
+            style={{
+              textDecoration: `none`,
+              color: `black`,
+              backgroundColor: "white",
+            }}
+          >
             <h1>La Liga</h1>
           </Link>
         </div>
