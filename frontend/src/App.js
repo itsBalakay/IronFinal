@@ -25,6 +25,9 @@ import Map from "./components/Map";
 import Checkout from "./components/Checkout";
 
 function App() {
+  let [total, setTotal] = useState(0);
+  console.log(total);
+
   let [user, setUser] = useState({});
   //search bar
   const [searchTerm, setSearchTerm] = useState("");
@@ -208,7 +211,7 @@ function App() {
               <Route
                 exact
                 path="/Mycart"
-                render={(props) => <Cart {...props} />}
+                render={(props) => <Cart setTotal={setTotal} {...props} />}
               />
               <Route
                 exact
@@ -223,7 +226,7 @@ function App() {
               <Route
                 exact
                 path="/checkout"
-                render={(props) => <Checkout {...props} />}
+                render={(props) => <Checkout total={total} {...props} />}
               />
             </Switch>
           </div>

@@ -46,19 +46,15 @@ const actions = {
     return await axios.get(`${serverUrl}/get-cart`, createHeaders());
   },
 
-  deleteItem: async () => {
-    return await axios.delete(`${serverUrl}/delete-cart-item`, createHeaders());
-  },
-
-  stripePay: async (id) => {
-    let res = await axios.post(
-      `${serverUrl}/payment`,
-      {
-        amount: 1000,
-        id,
-      },
+  deleteItem: async (item) => {
+    return await axios.delete(
+      `${serverUrl}/delete-cart-item?id=${item._id}`,
       createHeaders()
     );
+  },
+
+  stripePay: async (data) => {
+    let res = await axios.post(`${serverUrl}/payment`, data, createHeaders());
     return res;
   },
 
