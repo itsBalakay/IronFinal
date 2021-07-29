@@ -68,7 +68,14 @@ function LaLiga(props) {
   };
   return (
     <div>
-      <h2>La Liga</h2>
+      <h2
+        style={{
+          textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3)`,
+        }}
+      >
+        La Liga
+      </h2>
       {/* <Search shirts={filterBun} /> */}
       <div className="shirtsPage">
         <ShowLiga />

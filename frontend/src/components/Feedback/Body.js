@@ -88,8 +88,7 @@ const Body = ({
 );
 
 Body.defaultProps = {
-  bodyText:
-    "Need help? Have feedback? I'm a human so please be nice and I'll fix it!",
+  bodyText: "Need help? Type your fedback below and we'll fix it",
   bodyStyles: defaultBodyStyles,
   showEmailInput: true,
   showRatingInput: true,

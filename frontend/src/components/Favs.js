@@ -39,7 +39,14 @@ function Favs(props) {
   return (
     <div>
       <div>
-        <h1>Show off your new shirts!</h1>
+        <h1
+          style={{
+            textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3)`,
+          }}
+        >
+          Show off your new shirts!
+        </h1>
         <h4>Sign in to show off your favorite shirts</h4>
       </div>
       <div className="favList">

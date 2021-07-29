@@ -62,6 +62,8 @@ router.delete("/delete-cart-item", authorize, async (req, res) => {
 router.post("/payment", authorize, async (req, res) => {
   let { amount, id } = req.body;
   console.log(amount, id, "monkey");
+  amount = Number(amount.toFixed(2));
+  console.log(amount);
   try {
     const payment = await stripe.paymentIntents.create({
       amount,

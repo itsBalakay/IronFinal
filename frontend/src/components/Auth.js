@@ -14,22 +14,34 @@ function Auth(props) {
   };
 
   return (
-    <div className="google-container">
-      <div className="login-title">
-        <h3>Login With Google</h3>
-      </div>
+    <>
+      <div className="google-container">
+        <div className="login-title">
+          <h3>Login With Google</h3>
+        </div>
 
-      <div className="google-button-container">
-        <GoogleLogin
-          className="google-button"
-          clientId={process.env.REACT_APP_GOOGLEID}
-          buttonText="Login"
-          onSuccess={responseGoogle}
-          onFailure={responseGoogle}
-          cookiePolicy={"single_host_origin"}
-        />
+        <div className="google-button-container">
+          <GoogleLogin
+            className="google-button"
+            clientId={process.env.REACT_APP_GOOGLEID}
+            buttonText="Login"
+            onSuccess={responseGoogle}
+            onFailure={responseGoogle}
+            cookiePolicy={"single_host_origin"}
+          />
+        </div>
       </div>
-    </div>
+      <div>
+        <h6>No Google account?</h6>
+        <a
+          href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Click here to create one
+        </a>
+      </div>
+    </>
   );
 }
 
