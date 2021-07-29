@@ -13,8 +13,10 @@ function Profile(props) {
     <div>
       <h2>{props.user?.name}</h2>
       <img src={user?.imageUrl} />
-      <div>
-        <button onClick={logOut}>Log out</button>
+      <div className="button-remove-div">
+        <button className="cart-remove" onClick={logOut}>
+          Log out
+        </button>
       </div>
     </div>
   );
