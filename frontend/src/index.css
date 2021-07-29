@@ -363,10 +363,3 @@ button:hover {
 button:active {
   border: 10px dotted;
 }
-
-
-/* map css */
-.map-contact {
-  display: flex;
-  flex-direction: column;
-}
