@@ -35,11 +35,12 @@ function Checkout(props) {
       type: "card",
       card: elements.getElement(CardElement),
     });
-
+    console.log(error, paymentMethod);
     if (!error) {
       try {
         const { id } = paymentMethod;
-        let res = await actions.stripePay;
+        let res = await actions.stripePay({ id, amount: props.total });
+        console.log(res);
         if (res.data.success) {
           console.log("successful payment");
           setSuccess(true);

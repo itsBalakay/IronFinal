@@ -4,7 +4,7 @@ import "../cart.css";
 import actions from "../api";
 import { Link } from "react-router-dom";
 
-function Cart() {
+function Cart(props) {
   const [cart, setCart] = useState([]);
 
   const getCartItems = async () => {
@@ -17,13 +17,23 @@ function Cart() {
     getCartItems();
   }, []);
 
-  const removeItem = async (i) => {
+  const removeItem = async (i, item) => {
+    console.log(i);
     let copyOfCart = [...cart];
-    let res = await actions.deleteItem();
+    let res = await actions.deleteItem(item);
     console.log("button working?");
     copyOfCart.splice(i, 1);
     setCart(copyOfCart);
   };
+
+  const totalCart = () => {
+    return cart.reduce((acc, { price }) => {
+      acc = acc + price;
+      return acc;
+    }, 0);
+  };
+  console.log(totalCart());
+  props.setTotal(totalCart() * 100);
 
   const ShowCart = () => {
     return cart.map((cartItem, i) => {
@@ -46,7 +56,10 @@ function Cart() {
             <h5 style={{ color: `red` }}>${cartItem.price}</h5>
           </div>
           <div className="button-remove-div">
-            <button className="cart-remove" onClick={() => removeItem(i)}>
+            <button
+              className="cart-remove"
+              onClick={() => removeItem(i, cartItem)}
+            >
               Remove
             </button>
           </div>
@@ -59,6 +72,9 @@ function Cart() {
     <>
       <div>
         <ShowCart />
+      </div>
+      <div>
+        <h2>Subtotal: ${totalCart().toFixed(2)}</h2>
       </div>
       <div className="cart-bottom-button">
         <Link to="/">

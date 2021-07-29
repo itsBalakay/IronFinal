@@ -45,20 +45,23 @@ router.post("/add-to-cart", authorize, async (req, res) => {
   });
 });
 
-router.get("/get-cart", (req, res) => {
-  Cart.find().then((cartItems) => {
+router.get("/get-cart", authorize, async (req, res) => {
+  console.log(res.locals, "getcart");
+  Cart.find({ userId: res.locals.user._id }).then((cartItems) => {
+    console.log(cartItems);
     res.json(cartItems);
   });
 });
 
 router.delete("/delete-cart-item", authorize, async (req, res) => {
-  Cart.deleteOne().then((removeItem) => {
+  Cart.findByIdAndDelete(req.query.id).then((removeItem) => {
     res.json(removeItem);
   });
 });
 
 router.post("/payment", authorize, async (req, res) => {
   let { amount, id } = req.body;
+  console.log(amount, id, "monkey");
   try {
     const payment = await stripe.paymentIntents.create({
       amount,
@@ -118,8 +121,11 @@ router.post("/authenticate", async (req, res) => {
 //Middle ware >>> Put this in the middle of any route where you want to authorize
 function authorize(req, res, next) {
   let token = req.headers.authorization.split(" ")[1]; //Token from front end
+  console.log(token, "snail");
+
   if (token) {
     jwt.verify(token, "secret key", (err, data) => {
+      console.log(err, data);
       if (!err) {
         res.locals.user = data.user; //Set global variable with user data in the backend
         next();
