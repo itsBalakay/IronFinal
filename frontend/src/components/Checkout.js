@@ -79,7 +79,7 @@ function Checkout(props) {
         <div className="thanks-div">
           <h2>❤️ Thank you for your purchase! ❤️</h2>
           <img
-            style={{ width: "70%" }}
+            style={{ width: "60%" }}
             className="thanks-gif"
             src="https://i.gifer.com/K0lK.gif"
             alt="messi"
