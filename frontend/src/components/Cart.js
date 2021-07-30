@@ -38,30 +38,59 @@ function Cart(props) {
   const ShowCart = () => {
     return cart.map((cartItem, i) => {
       return (
-        <div className="cart-div">
-          <div className="cart-image">
-            <img
-              style={{ width: "25%" }}
-              src={cartItem.imageUrl[0]}
-              alt="cart-item"
-            />
-          </div>
-          <div className="cart-details">
-            <h5>{cartItem.club}</h5>
-            <h5>{cartItem.year}</h5>
-            <h5>{cartItem.size}</h5>
-            <i>SKU: {cartItem._id}</i>
-          </div>
-          <div className="cart-price">
-            <h5 style={{ color: `red` }}>${cartItem.price}</h5>
-          </div>
-          <div className="button-remove-div">
-            <button
-              className="cart-remove"
-              onClick={() => removeItem(i, cartItem)}
-            >
-              Remove
-            </button>
+        <div class="container">
+          <div class="cart-table">
+            <div class="row cart-row">
+              <div class="col-xs-12 col-md-2">
+                <img
+                  src={cartItem.imageUrl[0]}
+                  alt="cart-item"
+                  style={{ width: "100%" }}
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="product-articlenr">{cartItem._id}</div>
+                <div class="product-name">{cartItem.club} Shirt</div>
+                <div class="product-options">
+                  <span>Year:</span> {cartItem.year}
+                  <br />
+                  <span>Size:</span> {cartItem.size}
+                </div>
+                <div class="product-price">
+                  <input
+                    readOnly="true"
+                    type="text"
+                    name="quantity[1]"
+                    value="1"
+                    size="1"
+                    class="form-control"
+                  />
+                  {/* <button
+                    type="submit"
+                    data-toggle="tooltip"
+                    title="Uppdatera"
+                    class="update"
+                  > */}
+                  {/* <i class="fas fa-sync"></i>
+                  </button> */}
+                  <div class="product-price">$ {cartItem.price}</div>
+                </div>
+              </div>
+              <div class="col-md-3 cart-actions">
+                <div class="product-price-total">$ {cartItem.price}</div>
+                <div class="product-delete">
+                  <button
+                    type="button"
+                    data-toggle="tooltip"
+                    title="Ta bort"
+                    class="delete"
+                    onClick={() => removeItem(i, cartItem)}
+                  >
+                    <strong>X</strong>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       );
@@ -71,18 +100,27 @@ function Cart(props) {
   return (
     <>
       <div>
+        <h1 style={{ fontWeight: "300" }}>Cart</h1>
+      </div>
+      <div className="showCartDiv">
         <ShowCart />
       </div>
       <div>
-        <h2>Subtotal: ${totalCart().toFixed(2)}</h2>
+        <h2>Total: ${totalCart().toFixed(2)}</h2>
       </div>
       <div className="cart-bottom-button">
-        <Link to="/">
-          <button>Continue Shoppping</button>
-        </Link>
-        <Link to="/checkout">
-          <button>Checkout</button>
-        </Link>
+        <div className="contShopping">
+          <Link to="/">
+            <button style={{ width: "110%", height: "110%" }}>
+              Continue Shoppping
+            </button>
+          </Link>
+        </div>
+        <div className="checkoutButton">
+          <Link to="/checkout">
+            <button style={{ width: "110%", height: "110%" }}>Checkout</button>
+          </Link>
+        </div>
       </div>
     </>
   );
