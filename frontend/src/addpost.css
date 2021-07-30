@@ -207,9 +207,14 @@ body {
   margin: auto;
   padding: 1rem;
 }
-
-.post-button {
-  width: 30%;
+.post-button-div{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+.post-button{
+  width: 7%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }

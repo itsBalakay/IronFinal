@@ -59,27 +59,29 @@ function Footer(props) {
         </div>
         <hr />
         <div className="row">
-          <p className="col-sm" style={{ color: `white` }}>
-            🇺🇸USA &copy;{new Date().getFullYear()} RETRO SHIRT | All rights
-            reserved |
-            <a
-              style={{ color: `white` }}
-              href="https://www.adidas.com/us/help/us-company-information/what-are-the-terms-and-conditions"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Terms Of Service
-            </a>{" "}
-            |{" "}
-            <a
-              style={{ color: `white` }}
-              href="https://www.adidas.com/us/help/us-company-information/what-is-the-privacy-policy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Privacy
-            </a>
-          </p>
+          <div>
+            <p className="col-sm" style={{ color: `white` }}>
+              🇺🇸USA &copy;{new Date().getFullYear()} RETRO SHIRT | All rights
+              reserved |
+              <a
+                style={{ color: `white` }}
+                href="https://www.adidas.com/us/help/us-company-information/what-are-the-terms-and-conditions"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Terms Of Service
+              </a>{" "}
+              |{" "}
+              <a
+                style={{ color: `white` }}
+                href="https://www.adidas.com/us/help/us-company-information/what-is-the-privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>

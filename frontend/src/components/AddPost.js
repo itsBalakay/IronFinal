@@ -98,8 +98,8 @@ function AddPost(props) {
               <span class="field__label">Image URL</span>
             </span>
           </label>
-          <div className="post-button">
-            <button>Add</button>
+          <div className="post-button-div">
+            <button className="post-button">Add</button>
           </div>
         </form>
       </div>
