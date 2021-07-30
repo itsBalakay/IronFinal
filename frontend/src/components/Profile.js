@@ -12,6 +12,7 @@ function Profile(props) {
 
   return (
     <div>
+      <img src={user?.imageUrl} />
       <h2
         style={{
           textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
@@ -20,7 +21,7 @@ function Profile(props) {
       >
         {props.user?.name}
       </h2>
-      <img src={user?.imageUrl} />
+      <h3>{user?.email}</h3>
       <div className="button-logout-div">
         <button className="cart-remove" onClick={logOut}>
           Log out
