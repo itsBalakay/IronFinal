@@ -72,13 +72,13 @@ body{
 .product-link:hover{
     opacity: 0.9;
 }
-.product-price{
+.product-price-single{
     margin: 1rem 0;
     font-size: 1rem;
     font-weight: 700;
     text-align: left;
 }
-.product-price span{
+.product-price-single span{
     font-weight: 400;
 }
 .new-price span{

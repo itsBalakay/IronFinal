@@ -106,7 +106,7 @@ function Singleshirt(props) {
               visit our store
             </a>
 
-            <div className="product-price">
+            <div className="product-price-single">
               <h5 className="new-price">
                 <b>
                   Price:{" "}
