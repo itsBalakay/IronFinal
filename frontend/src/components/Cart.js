@@ -100,7 +100,14 @@ function Cart(props) {
   return (
     <>
       <div>
-        <h1 style={{ fontWeight: "300" }}>Cart</h1>
+        <h1
+          style={{
+            textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3)`,
+          }}
+        >
+          Cart
+        </h1>
       </div>
       <div className="showCartDiv">
         <ShowCart />

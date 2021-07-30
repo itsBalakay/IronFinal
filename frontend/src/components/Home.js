@@ -63,7 +63,14 @@ function Home(props) {
         <ul><ShowPosts /></ul>
       </div> */}
 
-      <h1>⚽Shop by League⚽</h1>
+      <h1
+        style={{
+          textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3)`,
+        }}
+      >
+        ⚽Shop by League⚽
+      </h1>
       <div className="bottomHome">
         <div className="halfHome-1">
           <Link
@@ -118,7 +125,14 @@ function Home(props) {
           </Link>
         </div>
       </div>
-      <h1>🔥Latest Arrivals🔥</h1>
+      <h1
+        style={{
+          textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3)`,
+        }}
+      >
+        🔥Latest Arrivals🔥
+      </h1>
       <div className="shirtsLatest">
         <ShowLatest />
       </div>
