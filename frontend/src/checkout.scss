@@ -1,0 +1,369 @@
+// //colors
+// $blue: #263238;
+// $blue-light: lighten(#263238, 20%);
+
+// //fonts
+// @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400);
+// @import url(https://fonts.googleapis.com/css?family=Bevan);
+
+// //Font declarations
+// $roboto: "Roboto", sans-serif;
+// $sans: "Open Sans", sans-serif;
+// $bevan: "Bevan", cursive;
+
+// //Z-index
+// $zBottom: 0;
+// $zMiddle: 200;
+// $zTop: 600;
+
+// html,
+// body {
+//   box-sizing: border-box;
+//   height: 100%;
+//   width: 100%;
+// }
+
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
+
+// body {
+//   display: table;
+//   background: #333;
+//   font-size: 100%;
+//   font-family: $roboto;
+//   font-weight: normal;
+//   padding: 0.75em;
+// }
+
+// .card-container {
+//   background-image: radial-gradient($blue-light, $blue);
+//   border-radius: 0.9375em;
+//   display: table-cell;
+//   font-size: 0.3rem;
+//   height: 100%;
+//   overflow: hidden;
+//   text-align: center;
+//   vertical-align: middle;
+//   width: 100%;
+
+//   @media (min-width: 25.625em) {
+//     font-size: 0.4rem;
+//   }
+
+//   @media (min-width: 47.5em) {
+//     font-size: 0.75rem;
+//   }
+
+//   @media (min-width: 60.625em) {
+//     font-size: 1rem;
+//   }
+// }
+
+.cc-h4 {
+  color: rgb(22, 10, 10);
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0 0 0.5em;
+  text-align: center;
+  text-shadow: 0.013em 0.039em 0.132em rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+
+///////////////////////
+//card common styles
+/////////////////////
+// .card {
+//   background: #fff;
+//   border-radius: 0.25em;
+//   box-shadow: 0 0.039em 0.132em rgba(0, 0, 0, 0.4);
+//   display: inline-block;
+//   font-size: 1em;
+//   height: 3em;
+//   overflow: hidden;
+//   position: relative;
+//   margin-right: 1em;
+//   vertical-align: middle;
+//   width: 5em;
+
+//   &:nth-of-type(5) {
+//     margin-right: 0;
+//   }
+// }
+
+// ///////////////
+// //visa
+// //////////////
+
+// $blue-visa: #00579f;
+// $yellow-visa: #fba31b;
+
+// .visa {
+//   font-family: $bevan;
+//   font-size: 2em;
+//   font-style: italic;
+//   font-weight: 800;
+//   padding: 0.05em;
+//   z-index: $zBottom;
+//   //blue and yellow stripe
+//   &:before,
+//   &:after {
+//     background: $blue-visa;
+//     border-top-left-radius: 0.25em;
+//     border-top-right-radius: 0.25em;
+//     content: "";
+//     display: block;
+//     height: 0.75em;
+//     left: 50%;
+//     position: absolute;
+//     top: 1.75%;
+//     transform: translate(-50%, 0);
+//     width: 96%;
+//     z-index: $zMiddle;
+//   }
+//   //push yellow down
+//   &:after {
+//     background: $yellow-visa;
+//     border-top-left-radius: 0;
+//     border-top-right-radius: 0;
+//     border-bottom-left-radius: 0.25em;
+//     border-bottom-right-radius: 0.25em;
+//     bottom: 1.75%;
+//     top: auto;
+//   }
+//   //visa letters
+//   p {
+//     color: $blue-visa;
+//     line-height: 3em;
+//     position: relative;
+
+//     //yellow swoosh
+//     &:after {
+//       border-top: 0.1em solid transparent;
+//       border-bottom: 0.1em solid transparent;
+//       border-left: 0.4em solid $yellow-visa;
+//       border-radius: 0.0625em;
+//       content: "";
+//       display: block;
+//       height: 0;
+//       left: 25.5%;
+//       position: absolute;
+//       top: 37.25%;
+//       transform: rotateZ(189deg);
+//       width: 0;
+//       z-index: $zTop;
+//     }
+//   }
+// }
+
+// ///////////////
+// // MasterCard
+// //////////////
+
+// $red-mc: #ef3526;
+// $yellow-mc: #fcb836;
+// $blue-mc: #0059b3;
+
+// .mc {
+//   background: $blue-mc;
+//   font-size: 2em;
+
+//   &:before,
+//   &:after {
+//     background: $red-mc;
+//     border-radius: 50%;
+//     content: "";
+//     display: block;
+//     height: 2em;
+//     left: 35%;
+//     position: absolute;
+//     top: 50%;
+//     width: 2em;
+//     transform: translate(-50%, -50%);
+//     z-index: $zMiddle;
+//   }
+
+//   &:after {
+//     background: $yellow-mc;
+//     left: 65%;
+//   }
+
+//   hr {
+//     background: $red-mc;
+//     border: none;
+//     border-top-right-radius: 0.25em;
+//     height: 0.14em;
+//     margin: 0.14em auto;
+//     position: relative;
+//     top: 25%;
+//     width: 0.65em;
+//     z-index: $zTop;
+
+//     &:nth-of-type(1),
+//     &:nth-of-type(5) {
+//       transform: translate(-28%, 0);
+//     }
+
+//     &:nth-of-type(2),
+//     &:nth-of-type(4) {
+//       transform: translate(-10%, 0);
+//     }
+
+//     &:nth-of-type(4),
+//     &:nth-of-type(5) {
+//       border-top-right-radius: 0;
+//       border-bottom-right-radius: 0.25em;
+//     }
+
+//     &:nth-of-type(3) {
+//       border-top-right-radius: 4;
+//       border-bottom-right-radius: 0.25em;
+//     }
+//   }
+
+//   p {
+//     color: #fff;
+//     font-size: 0.63em;
+//     font-weight: 600;
+//     line-height: 1.5em;
+//     position: relative;
+//     text-shadow: 0.0625em 0.0625em 0.0625em rgba(0, 0, 0, 1);
+//     top: -0.8em;
+//     z-index: $zTop;
+//   }
+// }
+
+// ///////////////
+// // AMEX
+// //////////////
+// $blue-light-AMEX: rgba(126, 205, 242, 1);
+// $blue-dark-AMEX: rgba(9, 113, 188, 1);
+
+// .amex {
+//   background: $blue-dark-AMEX;
+//   background-image: radial-gradient(
+//     top left,
+//     circle farthest-corner,
+//     $blue-light-AMEX,
+//     $blue-dark-AMEX 60%
+//   );
+//   font-size: 2em;
+//   font-weight: 900;
+
+//   hr {
+//     border: none;
+//     border-top: 1px solid rgba(255, 255, 255, 0.05);
+//     margin: 0.15em 0;
+//   }
+
+//   .svg {
+//     color: #fff;
+//     font-size: 0.8em;
+//     left: 0;
+//     position: absolute;
+//     top: 0;
+//     stroke-width: 1;
+//   }
+// }
+
+// ///////////////
+// // Discover
+// //////////////
+// $orange-disc: #ff7800;
+// .discover {
+//   font-size: 2em;
+
+//   &:after {
+//     border-top: 0.75em solid transparent;
+//     border-bottom: 0 solid transparent;
+//     border-right: 1.75em solid $orange-disc;
+//     bottom: 0;
+//     content: "";
+//     height: 0;
+//     position: absolute;
+//     right: 0;
+//     width: 0;
+//   }
+
+//   p {
+//     font-size: 0.75em;
+//     font-weight: bold;
+//     letter-spacing: 0.0625em;
+//     line-height: 4em;
+//     position: relative;
+//     text-transform: uppercase;
+
+//     &:after {
+//       background: $orange-disc;
+//       border-radius: 50%;
+//       content: "";
+//       display: block;
+//       height: 0.85em;
+//       left: 3.11em;
+//       position: absolute;
+//       top: 1.5em;
+//       width: 0.85em;
+
+//       @media (min-width: 25.625em) {
+//         top: 1.59em;
+//       }
+//     }
+//   }
+// }
+
+// ///////////////
+// // Back
+// //////////////
+// .back {
+//   background: #ccc;
+//   font-size: 2em;
+//   padding: 0.5em 0.12em;
+
+//   &:before {
+//     background: #333;
+//     content: "";
+//     display: block;
+//     height: 0.6em;
+//     width: 100%;
+//   }
+
+//   &:after {
+//     background: #333;
+//     border: 0.2em solid #fff;
+//     content: "";
+//     display: block;
+//     height: 0.55em;
+//     margin-left: 0.2em;
+//     margin-top: 0.28em;
+//     width: 55%;
+//   }
+
+//   span {
+//     background: #333;
+//     border: 0.15em solid #fff;
+//     display: block;
+//     height: 0.43em;
+//     margin-left: 0.2em;
+//     margin-top: 0.5em;
+//     position: absolute;
+//     right: 0.65em;
+//     top: 0.95em;
+//     width: 0.55em;
+//     z-index: $zBottom;
+
+//     &:before {
+//       border: 0.15em solid red;
+//       border-radius: 50%;
+//       content: "";
+//       height: 0.95em;
+//       left: -0.35em;
+//       position: absolute;
+//       top: -0.4em;
+//       width: 0.95em;
+//       z-index: $zTop;
+//     }
+//   }
+// }

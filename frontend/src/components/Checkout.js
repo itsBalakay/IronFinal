@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../checkout.css";
+import "../checkout.scss";
 import actions from "../api";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
@@ -73,6 +74,17 @@ function Checkout(props) {
           </fieldset>
           <div className="PayRow">
             <button className="checkout-button">Pay</button>
+          </div>
+          <h4 className="cc-h4">Accepted Payment Methods</h4>
+          <div className="credit-cards" style={{ width: `100%` }}>
+            <img
+              style={{ height: `40` }}
+              src="https://shoplineimg.com/assets/footer/card_visa.png"
+            />
+            <img
+              style={{ height: `40` }}
+              src="https://shoplineimg.com/assets/footer/card_master.png"
+            />
           </div>
         </form>
       ) : (
