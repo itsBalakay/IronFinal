@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import actions from "../api";
 import { Link } from "react-router-dom";
+import "../singleShirt.css";
 
 function Singleshirt(props) {
   const [singleShirt, setSingleShirt] = useState();
@@ -67,59 +68,110 @@ function Singleshirt(props) {
 
   return (
     <>
-      <div className="singleShirtContainer">
-        <div className="singleShirtFlex">
-          <img
-            style={{ width: `100%`, height: `100%` }}
-            src={singleShirt?.imageUrl[0]}
-            alt="single-shirt-pic"
-          />
-          <img
-            style={{ width: `100%`, height: `100%` }}
-            src={singleShirt?.imageUrl[1]}
-            alt="single-shirt-pic"
-          />
-        </div>
-        <div className="singleDescription">
-          <ul>
-            <li>
-              Club: <span style={{ color: `maroon` }}>{singleShirt?.club}</span>
-            </li>
-            <li>
-              Year: <span style={{ color: `maroon` }}>{singleShirt?.year}</span>
-            </li>
-            <li>
-              Player:{" "}
-              <span style={{ color: `maroon` }}>{singleShirt?.player}</span>
-            </li>
-            <li>
-              League:{" "}
-              <span style={{ color: `maroon` }}>{singleShirt?.league}</span>
-            </li>
-            <li>
-              Size: <span style={{ color: `maroon` }}>{singleShirt?.size}</span>
-            </li>
-            <li>
-              Condition:{" "}
-              <span style={{ color: `maroon` }}>{singleShirt?.condition}</span>
-            </li>
-            <li>
-              Price: <span style={{ color: `red` }}>${singleShirt?.price}</span>
-            </li>
-            <li>
-              Notes:{" "}
-              <span style={{ color: `maroon` }}>{singleShirt?.notes}</span>
-            </li>
-            <li>
+      {/* Start of new Single CSS */}
+      <div className="card-wrapper">
+        <div className="card">
+          {/* <!-- card left --> */}
+          <div className="product-imgs">
+            <div className="img-display">
+              <div className="img-showcase">
+                <img
+                  className="singleImg"
+                  src={singleShirt?.imageUrl[0]}
+                  alt="shirtimage1"
+                />
+                <img
+                  className="singleImg"
+                  src={singleShirt?.imageUrl[1]}
+                  alt="shirtimage2"
+                />
+              </div>
+            </div>
+            <div className="img-select">
+              <div className="img-item">
+                <a href="#" data-id="2">
+                  <img
+                    className="singleImg"
+                    src={singleShirt?.imageUrl[1]}
+                    alt="shirtimage"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* <!-- card right --> */}
+          <div className="product-content">
+            <h2 className="product-title">{singleShirt?.club}</h2>
+            <a href="#" className="product-link">
+              visit our store
+            </a>
+
+            <div className="product-price">
+              <h5 className="new-price">
+                <b>
+                  Price:{" "}
+                  <span>
+                    <b>${singleShirt?.price}</b>
+                  </span>
+                </b>
+              </h5>
+            </div>
+
+            <div className="product-detail">
+              <h2>about this item: </h2>
+              <div className="product-detail-notes">
+                <h6>{singleShirt?.notes}</h6>
+              </div>
+
+              <ul>
+                <li>
+                  Player: <span>{singleShirt?.player}</span>
+                </li>
+                <li>
+                  Year: <span>{singleShirt?.year}</span>
+                </li>
+                <li>
+                  League: <span>{singleShirt?.league}</span>
+                </li>
+                <li>
+                  Condition: <span>{singleShirt?.condition}</span>
+                </li>
+                <li>
+                  Size: <span>{singleShirt?.size}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="purchase-info">
+              {/* <input readOnly="true" type="number" min="0" value="1" /> */}
               <button
-                style={{ width: "20%" }}
-                className="mylist-popbutton"
+                type="button"
+                className="btn"
                 onClick={() => addRetroToCart(singleShirt)}
               >
                 Add to Cart
               </button>
-            </li>
-          </ul>
+            </div>
+
+            {/* <div className="social-links">
+              <p>Share At: </p>
+              <a href="#">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-whatsapp"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-pinterest"></i>
+              </a>
+            </div> */}
+          </div>
         </div>
       </div>
 

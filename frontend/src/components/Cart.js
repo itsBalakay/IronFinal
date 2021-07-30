@@ -57,14 +57,14 @@ function Cart(props) {
                   <span>Size:</span> {cartItem.size}
                 </div>
                 <div class="product-price">
-                  <input
+                  {/* <input
                     readOnly="true"
                     type="text"
                     name="quantity[1]"
                     value="1"
                     size="1"
                     class="form-control"
-                  />
+                  /> */}
                   {/* <button
                     type="submit"
                     data-toggle="tooltip"
