@@ -102,7 +102,12 @@ function Singleshirt(props) {
           {/* <!-- card right --> */}
           <div className="product-content">
             <h2 className="product-title">{singleShirt?.club}</h2>
-            <a href="#" className="product-link">
+            <a
+              href="https://www.google.com/maps/place/Upper+90+Soccer+Brooklyn/@40.7005508,-73.9923454,13z/data=!3m1!5s0x89c25a4da1a25281:0x19f8c9d43aeb9bd8!4m9!1m2!2m1!1ssoccer+jersey!3m5!1s0x0:0xfc1e41ef21aab136!8m2!3d40.6876597!4d-73.9862707!15sCg1zb2NjZXIgamVyc2V5Wg8iDXNvY2NlciBqZXJzZXmSAQxzb2NjZXJfc3RvcmWaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkpkWFZFTVZWM0VBRQ?hl=en&authuser=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="product-link"
+            >
               visit our store
             </a>
 

@@ -111,7 +111,9 @@ function App() {
             </h1>
             {user?.name ? (
               <div>
-                <i>Welcome back, {user?.name}</i>
+                <i style={{ color: `chocolate` }}>
+                  <b>Welcome back, {user?.name}</b>
+                </i>
               </div>
             ) : (
               <i></i>

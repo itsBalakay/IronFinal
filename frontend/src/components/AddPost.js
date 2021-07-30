@@ -32,72 +32,84 @@ function AddPost(props) {
       </h3>
       <div class="page">
         <form onSubmit={handleSubmit}>
-          <label class="field field_v1">
-            <input
-              class="field__input"
-              type="text"
-              onChange={handleChange}
-              placeholder="club"
-            />
-            <span class="field__label-wrap">
-              <span class="field__label">Club</span>
-            </span>
-          </label>
-          <label class="field field_v2">
-            <input
-              class="field__input"
-              type="text"
-              onChange={handleChange}
-              placeholder="year"
-            />
-            <span class="field__label-wrap">
-              <span class="field__label">Year</span>
-            </span>
-          </label>
-          <label class="field field_v3">
-            <input
-              class="field__input"
-              type="text"
-              onChange={handleChange}
-              placeholder="player"
-            />
-            <span class="field__label-wrap">
-              <span class="field__label">Player</span>
-            </span>
-          </label>
-          <label class="field field_v1">
-            <input
-              class="field__input"
-              type="text"
-              onChange={handleChange}
-              placeholder="league"
-            />
-            <span class="field__label-wrap">
-              <span class="field__label">League</span>
-            </span>
-          </label>
-          <label class="field field_v1">
-            <input
-              class="field__input"
-              type="text"
-              onChange={handleChange}
-              placeholder="notes"
-            />
-            <span class="field__label-wrap">
-              <span class="field__label">Notes</span>
-            </span>
-          </label>
-          <label class="field field_v1">
-            <input
-              class="field__input"
-              type="text"
-              onChange={handleChange}
-              placeholder="imageUrl"
-            />
-            <span class="field__label-wrap">
-              <span class="field__label">Image URL</span>
-            </span>
-          </label>
+          <div>
+            <label class="field field_v1">
+              <input
+                class="field__input"
+                type="text"
+                onChange={handleChange}
+                placeholder="club"
+              />
+              <span class="field__label-wrap">
+                <span class="field__label">Club</span>
+              </span>
+            </label>
+          </div>
+          <div>
+            <label class="field field_v2">
+              <input
+                class="field__input"
+                type="text"
+                onChange={handleChange}
+                placeholder="year"
+              />
+              <span class="field__label-wrap">
+                <span class="field__label">Year</span>
+              </span>
+            </label>
+          </div>
+          <div>
+            <label class="field field_v3">
+              <input
+                class="field__input"
+                type="text"
+                onChange={handleChange}
+                placeholder="player"
+              />
+              <span class="field__label-wrap">
+                <span class="field__label">Player</span>
+              </span>
+            </label>
+          </div>
+          <div>
+            <label class="field field_v1">
+              <input
+                class="field__input"
+                type="text"
+                onChange={handleChange}
+                placeholder="league"
+              />
+              <span class="field__label-wrap">
+                <span class="field__label">League</span>
+              </span>
+            </label>
+          </div>
+          <div>
+            <label class="field field_v1">
+              <input
+                class="field__input"
+                type="text"
+                onChange={handleChange}
+                placeholder="notes"
+              />
+              <span class="field__label-wrap">
+                <span class="field__label">Notes</span>
+              </span>
+            </label>
+          </div>
+          <div>
+            <label class="field field_v1">
+              <input
+                class="field__input"
+                type="text"
+                onChange={handleChange}
+                placeholder="imageUrl"
+              />
+              <span class="field__label-wrap">
+                <span class="field__label">Image URL</span>
+              </span>
+            </label>
+          </div>
           <div className="post-button">
             <button>Add</button>
           </div>
