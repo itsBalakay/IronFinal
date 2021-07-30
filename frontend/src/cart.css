@@ -1,38 +1,3 @@
-/* .cart-div {
-    display: flex;
-    margin: 10px 200px;
-    border: solid;
-    background-color: white;
-}
-.cart-image {
-    text-align: left;
-}
-.cart-details {
-    display: flex;
-    flex-direction: column;
-}
-.cart-price {
-    display: flex;
-    align-items: center;
-}
-.button-remove-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-  
-.button-remove-div button:hover {
-    background-color: red;
-    color: white;
-    border: 2px solid black;
-}
-  
-.cart-bottom-button {
-    margin: 40px 20px;
-    display: flex;
-    justify-content: space-evenly;
-} */
-
 .showCartDiv{
     margin: 0 0 2% 0;
 }
