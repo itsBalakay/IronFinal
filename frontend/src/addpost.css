@@ -200,16 +200,25 @@ body {
   flex-direction: column;
 }
 
+.post-h3 {
+  margin: 3.1% 0 0 0;
+}
+
 .page {
   box-sizing: border-box;
   width: 100%;
   /* max-width: 480px; */
-  margin: auto;
-  padding: 1rem;
-}
 
+  padding: 2rem;
+}
+.post-button-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .post-button {
-  width: 30%;
+  width: 7%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }

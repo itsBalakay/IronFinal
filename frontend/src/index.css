@@ -155,7 +155,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 0 30px;
+  margin: 2.5% 30px;
 }
 .shirtList {
   list-style: none;

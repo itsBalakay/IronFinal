@@ -19,7 +19,7 @@ import Prem from "./components/Prem";
 import Search from "./components/Search";
 import { useHistory } from "react-router-dom";
 import Cart from "./components/Cart";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/FooterMain";
 import FeedBack from "./components/Feedback/Feedback";
 import Map from "./components/Map/Map";
 import Checkout from "./components/Checkout";

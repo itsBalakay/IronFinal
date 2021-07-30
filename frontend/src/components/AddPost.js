@@ -23,6 +23,7 @@ function AddPost(props) {
   return (
     <div>
       <h3
+        className="post-h3"
         style={{
           textShadow: `2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3)`,
@@ -110,8 +111,8 @@ function AddPost(props) {
               </span>
             </label>
           </div>
-          <div className="post-button">
-            <button>Add</button>
+          <div className="post-button-div">
+            <button className="post-button">Add</button>
           </div>
         </form>
       </div>
@@ -119,17 +120,3 @@ function AddPost(props) {
   );
 }
 export default AddPost;
-
-{
-  /* <div className="page">
-        <form onSubmit={handleSubmit}>
-          <input type="text" onChange={handleChange} placeholder="club" />
-          <input type="text" onChange={handleChange} placeholder="year" />
-          <input type="text" onChange={handleChange} placeholder="player" />
-          <input type="text" onChange={handleChange} placeholder="league" />
-          <input type="text" onChange={handleChange} placeholder="notes" />
-          <input type="text" onChange={handleChange} placeholder="imageUrl" />
-          <button>Add</button>
-        </form>
-      </div> */
-}
